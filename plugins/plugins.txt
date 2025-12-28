@@ -1,0 +1,10 @@
+https://cdn.modrinth.com/data/3IEZ9vol/versions/oezVemzR/AuthMe-5.7.0-FORK-Universal.jar
+https://cdn.modrinth.com/data/8sg1aj4I/versions/CK1V6HTE/BedWars-0.2.42.1.jar
+https://cdn.modrinth.com/data/hXiIvTyT/versions/SKQwLLoQ/EssentialsX-2.21.0.jar
+https://cdn.modrinth.com/data/g8Zwnnmn/versions/wNFGe3C9/ExecutableItems-7.25.12.24.jar
+https://cdn.modrinth.com/data/Vebnzrzj/versions/OrIs0S6b/LuckPerms-Bukkit-5.5.17.jar
+https://cdn.modrinth.com/data/ZfcV7L06/versions/ElVp1U5H/SCore-5.25.12.24.jar
+https://cdn.modrinth.com/data/TsLS8Py5/versions/gtqGepWi/SkinsRestorer.jar
+https://cdn.modrinth.com/data/3wmN97b8/versions/fw2C2Wui/multiverse-core-5.4.0.jar
+https://cdn.modrinth.com/data/9eGKb6K1/versions/gKg6nA1q/voicechat-bukkit-2.6.7.jar
+https://cdn.modrinth.com/data/1u6JkXh5/versions/XlUIRmF8/worldedit-bukkit-7.3.18.jar
