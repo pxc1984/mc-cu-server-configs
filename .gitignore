@@ -1,0 +1,87 @@
+# --- Paper / Minecraft server configs repo ---
+# Goal: keep configs in git, ignore runtime data, worlds, logs, caches, databases, player data.
+
+# OS / tooling
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Archives / dumps
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.bak
+
+# Server runtime
+logs/
+crash-reports/
+cache/
+timings/
+usercache.json
+versions/
+libraries/
+
+# Worlds (live server worlds are usually not for config repos)
+# Keep BedWars map worlds under bedwars_worlds/, but ignore the actual running server worlds.
+# IMPORTANT (Windows): match only worlds at repo root, so it doesn't ignore plugins/WorldEdit.
+/world*/
+
+# BedWars maps: keep the maps, but ignore noisy/runtime/person-related files inside them
+bedwars_worlds/**/session.lock
+bedwars_worlds/**/uid.dat
+bedwars_worlds/**/playerdata/
+bedwars_worlds/**/stats/
+bedwars_worlds/**/advancements/
+
+# Common sensitive files (don’t commit secrets)
+*.pem
+*.key
+*.p12
+*.keystore
+*.jks
+
+# Plugin-generated data (keep configs, ignore “live” data)
+plugins/*.jar
+plugins/*.jar.disabled
+plugins/*.jar.old
+plugins/*.jar.bak
+plugins/**/lib/
+plugins/**/libs/
+plugins/**/cache/
+plugins/**/caches/
+plugins/**/tmp/
+plugins/**/temp/
+plugins/**/logs/
+plugins/**/log/
+plugins/**/*.log
+plugins/**/debug/
+plugins/**/backups/
+plugins/**/backup/
+plugins/**/database/
+plugins/**/databases/
+plugins/**/*.db
+plugins/**/*.sqlite
+plugins/**/*.sqlite3
+plugins/**/*.mv.db
+plugins/**/*.h2.db
+
+# Player/account data folders often contain personal data; avoid committing
+plugins/**/userdata/
+plugins/**/user-data/
+plugins/**/players/
+plugins/**/playerdata/
+
+# Large asset packs / generated textures
+plugins/**/__textures__/
+plugins/**/textures-cache/
+plugins/**/*.mmdb
+
+# Spark temporary artifacts
+plugins/**/tmp-client/
+
+# Download artifacts you generate locally
+plugins-folders.tar.gz
+
