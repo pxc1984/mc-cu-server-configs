@@ -8,6 +8,6 @@ https://cdn.modrinth.com/data/TsLS8Py5/versions/gtqGepWi/SkinsRestorer.jar
 https://cdn.modrinth.com/data/3wmN97b8/versions/fw2C2Wui/multiverse-core-5.4.0.jar
 https://cdn.modrinth.com/data/9eGKb6K1/versions/gKg6nA1q/voicechat-bukkit-2.6.7.jar
 https://cdn.modrinth.com/data/1u6JkXh5/versions/XlUIRmF8/worldedit-bukkit-7.3.18.jar
-
+https://cdn.modrinth.com/data/sYpvDxGJ/versions/mUsbLYCO/EssentialsXSpawn-2.21.0.jar
 https://cdn.modrinth.com/data/xwtFuoYG/versions/LrkqK1RY/ImageMaps-1.0.jar
 https://cdn.modrinth.com/data/7TbtGLSU/versions/305XjqJB/anty-xray-1.0.0.jar
