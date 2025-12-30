@@ -11,3 +11,4 @@ https://cdn.modrinth.com/data/1u6JkXh5/versions/XlUIRmF8/worldedit-bukkit-7.3.18
 https://cdn.modrinth.com/data/sYpvDxGJ/versions/mUsbLYCO/EssentialsXSpawn-2.21.0.jar
 https://cdn.modrinth.com/data/xwtFuoYG/versions/LrkqK1RY/ImageMaps-1.0.jar
 https://cdn.modrinth.com/data/7TbtGLSU/versions/305XjqJB/anty-xray-1.0.0.jar
+https://cdn.modrinth.com/data/otHQ7zw3/versions/DNTeer1K/xrayguard-1.1.0.jar
