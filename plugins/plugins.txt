@@ -8,7 +8,12 @@ https://cdn.modrinth.com/data/TsLS8Py5/versions/gtqGepWi/SkinsRestorer.jar
 https://cdn.modrinth.com/data/3wmN97b8/versions/fw2C2Wui/multiverse-core-5.4.0.jar
 https://cdn.modrinth.com/data/9eGKb6K1/versions/gKg6nA1q/voicechat-bukkit-2.6.7.jar
 https://cdn.modrinth.com/data/1u6JkXh5/versions/XlUIRmF8/worldedit-bukkit-7.3.18.jar
+
 https://cdn.modrinth.com/data/sYpvDxGJ/versions/mUsbLYCO/EssentialsXSpawn-2.21.0.jar
-https://cdn.modrinth.com/data/wsr1TOgJ/versions/6RVqRiF8/mapify-1.9.jar
 https://cdn.modrinth.com/data/Lu3KuzdV/versions/HD2IvrxS/CoreProtect-CE-23.1.jar
 https://cdn.modrinth.com/data/otHQ7zw3/versions/DNTeer1K/xrayguard-1.1.0.jar
+
+https://cdn.modrinth.com/data/DKY9btbd/versions/f9NoeotB/worldguard-bukkit-7.0.13-dist.jar
+https://cdn.modrinth.com/data/FXR5nhTz/versions/LZxhu1uM/autosort-0.1.12%2B1.21.11-paper.jar
+https://cdn.modrinth.com/data/lJFOpcEj/versions/Wn6cnDkq/ImageFrame-1.9.0.0.jar
+https://cdn.modrinth.com/data/JOwrpZ7P/versions/6flJlSqM/playersit-1.0.0.jar
