@@ -288,11 +288,11 @@ statistics:
     lose: 0
     record: 100
 database:
-  host: localhost
+  host: mysql
   port: 3306
-  db: database
-  user: root
-  password: secret
+  db: mccu
+  user: mccu
+  password: dimatrushintop
   table-prefix: bw_
   type: mysql
   driver: default
