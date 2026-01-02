@@ -17,3 +17,5 @@ https://cdn.modrinth.com/data/DKY9btbd/versions/f9NoeotB/worldguard-bukkit-7.0.1
 https://cdn.modrinth.com/data/FXR5nhTz/versions/LZxhu1uM/autosort-0.1.12%2B1.21.11-paper.jar
 https://cdn.modrinth.com/data/lJFOpcEj/versions/Wn6cnDkq/ImageFrame-1.9.0.0.jar
 https://cdn.modrinth.com/data/JOwrpZ7P/versions/6flJlSqM/playersit-1.0.0.jar
+https://cdn.modrinth.com/data/2qgyQbO1/versions/mLVD9CNS/EssentialsXChat-2.21.0.jar
+https://cdn.modrinth.com/data/gG7VFbG0/versions/BQc9Xm3K/TAB%20v5.4.0.jar
