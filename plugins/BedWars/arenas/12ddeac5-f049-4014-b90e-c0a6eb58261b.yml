@@ -1,0 +1,62 @@
+name: realwar
+pauseCountdown: 60
+gameTime: 3600
+world: RealWar
+pos1: -170.26109785110705;131.29172329113558;-131.53268631931442;-36.57422;2.0999985
+pos2: 151.49742542201753;246.00717934977135;149.25583245851936;142.0664;36.599888
+specSpawn: -71.60204161401418;178.52744455214903;7.954543744451715;-142.63367;11.549998
+lobbySpawn: -73.55305570166851;178.52744455214903;10.513339065542194;-142.63367;11.549998
+lobbySpawnWorld: RealWar
+minPlayers: 2
+postGameWaiting: 3
+teams:
+  test:
+    isNewColor: false
+    color: BLACK
+    maxPlayers: 2
+    bed: 11.0;207.0;-82.0;0.0;0.0
+    spawn: -70.2857396828883;177.4099185610959;6.461045270951744;-142.63367;11.549998
+    actualName: test
+  tests:
+    isNewColor: false
+    color: BLUE
+    maxPlayers: 2
+    bed: -83.0;180.0;5.0;0.0;0.0
+    spawn: -71.57528228998667;177.4099185610959;8.16020344454965;-142.63367;11.549998
+    actualName: tests
+spawners: []
+constant:
+  compass-enabled: inherit
+  add-wool-to-inventory-on-join: inherit
+  in-lobby-colored-leather-by-team: inherit
+  allow-crafting: inherit
+  join-randomly-after-lobby-timeout: inherit
+  join-randomly-on-lobby-join: inherit
+  keep-inventory-on-death: inherit
+  prevent-killing-villagers: inherit
+  player-drops: inherit
+  friendlyfire: inherit
+  lobbybossbar: inherit
+  bossbar: inherit
+  lobbyscoreboard: inherit
+  scoreboard: inherit
+  prevent-spawning-mobs: inherit
+  spawner-holograms: inherit
+  spawner-disable-merge: inherit
+  game-start-items: inherit
+  player-respawn-items: inherit
+  spawner-holograms-countdown: inherit
+  damage-when-player-is-not-in-arena: inherit
+  remove-unused-target-blocks: inherit
+  allow-block-falling: inherit
+  holo-above-bed: inherit
+  allow-spectator-join: inherit
+  anchor-auto-fill: inherit
+  anchor-decreasing: inherit
+  cake-target-block-eating: inherit
+  target-block-explosions: inherit
+  invisible-lobby-on-game-start: inherit
+arenaTime: WORLD
+arenaWeather: default
+lobbyBossBarColor: default
+gameBossBarColor: default
