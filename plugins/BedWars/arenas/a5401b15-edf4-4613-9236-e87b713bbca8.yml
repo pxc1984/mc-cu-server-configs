@@ -1,0 +1,62 @@
+name: realwar
+pauseCountdown: 60
+gameTime: 3600
+world: RealWar
+pos1: 137.93593656173144;145.54077558429222;165.29343855773834;152.25044;16.650017
+pos2: -29.350368803967385;193.14022667122086;76.99523061476675;116.250595;-2.0999832
+specSpawn: -7.533334586998657;184.89641609765562;79.44387459488016;-82.649345;23.400015
+lobbySpawn: -10.71102070433738;184.89641609765562;79.05884983619156;-82.649345;23.400015
+lobbySpawnWorld: RealWar
+minPlayers: 2
+postGameWaiting: 3
+teams:
+  test:
+    isNewColor: false
+    color: BLACK
+    maxPlayers: 2
+    bed: 1.0;184.0;95.0;0.0;0.0
+    spawn: 0.24723105169053813;184.89641609765562;91.59203372757867;-82.649345;23.400015
+    actualName: test
+  tests:
+    isNewColor: false
+    color: BLUE
+    maxPlayers: 2
+    bed: -2.0;184.0;91.0;0.0;0.0
+    spawn: 0.24723105169053813;184.89641609765562;91.59203372757867;-82.649345;23.400015
+    actualName: tests
+spawners: []
+constant:
+  compass-enabled: inherit
+  add-wool-to-inventory-on-join: inherit
+  in-lobby-colored-leather-by-team: inherit
+  allow-crafting: inherit
+  join-randomly-after-lobby-timeout: inherit
+  join-randomly-on-lobby-join: inherit
+  keep-inventory-on-death: inherit
+  prevent-killing-villagers: inherit
+  player-drops: inherit
+  friendlyfire: inherit
+  lobbybossbar: inherit
+  bossbar: inherit
+  lobbyscoreboard: inherit
+  scoreboard: inherit
+  prevent-spawning-mobs: inherit
+  spawner-holograms: inherit
+  spawner-disable-merge: inherit
+  game-start-items: inherit
+  player-respawn-items: inherit
+  spawner-holograms-countdown: inherit
+  damage-when-player-is-not-in-arena: inherit
+  remove-unused-target-blocks: inherit
+  allow-block-falling: inherit
+  holo-above-bed: inherit
+  allow-spectator-join: inherit
+  anchor-auto-fill: inherit
+  anchor-decreasing: inherit
+  cake-target-block-eating: inherit
+  target-block-explosions: inherit
+  invisible-lobby-on-game-start: inherit
+arenaTime: WORLD
+arenaWeather: default
+lobbyBossBarColor: default
+gameBossBarColor: default
