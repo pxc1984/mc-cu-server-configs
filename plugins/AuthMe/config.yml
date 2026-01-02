@@ -1,26 +1,20 @@
 DataSource:
     # What type of database do you want to use?
     # Valid values: H2, SQLITE, MARIADB, MYSQL, POSTGRESQL
-    backend: SQLITE
-    # Enable the database caching system, should be disabled on bungeecord environments
-    # or when a website integration is being used.
     caching: true
     # Should we try to use VirtualThreads(Java 21+) for database cache loader?
     useVirtualThreadsCache: false
-    # Database host address
-    mySQLHost: 127.0.0.1
-    # Database port
+
+    # ВКЛЮЧАЕМ МУСКУЛ
+    backend: MYSQL
+    mySQLHost: mysql
     mySQLPort: '3306'
-    # Replacement of Mysql's useSsl (for MariaDB only).
-    # - disable: No SSL
-    # - trust: Trust blindly (no validation)
-    # - verify_ca:  Encryption, certificates validation, BUT no hostname verification
-    # - verify_full: Encryption, certificate validation and hostname validation
-    # Read more: https://bit.ly/mariadb-sslmode
+    # ВКЛЮЧАЕМ МУСКУЛ
+
     MariaDbSslMode: disabled
     # Connect to MySQL database over SSL
     # If you're using MariaDB, use sslMode instead
-    mySQLUseSSL: true
+    mySQLUseSSL: false
     # Verification of server's certificate.
     # We would not recommend to set this option to false.
     # Set this option to false at your own risk if and only if you know what you're doing
@@ -30,14 +24,14 @@ DataSource:
     # If you are using MariaDB, use MariaDbSslMode instead.
     mySQLAllowPublicKeyRetrieval: true
     # Username to connect to the MySQL database
-    mySQLUsername: authme
-    # Password to connect to the MySQL database
-    mySQLPassword: '12345'
-    # Database Name, use with converters or as SQLITE database name
-    mySQLDatabase: authme
-    # Table of the database
+
+    # ЭТО ТОЖЕ МЕНЯЕМ ДЛЯ МУСКУЛА
+    mySQLUsername: mccu
+    mySQLPassword: 'dimatrushintop'
+    mySQLDatabase: mccu
     mySQLTablename: authme
-    # Column of IDs to sort data
+    # ВКЛЮЧАЕМ МУСКУЛ
+
     mySQLColumnId: id
     # Column for storing or checking players nickname
     mySQLColumnName: username
@@ -127,7 +121,7 @@ ExternalBoardOptions:
             # locale-code-redirect:
             # - 'tt_ru:ru'
             # - 'lzh:zhcn'
-            locale-code-redirect: 
+            locale-code-redirect:
             - tt_ru:ru
             - lzh:zhcn
         # Should we let Bedrock players login automatically?
@@ -185,7 +179,7 @@ settings:
         # Hide the chat log from players who are not authenticated?
         hideChat: false
         # Allowed commands for unauthenticated players
-        allowCommands: 
+        allowCommands:
         - /login
         - /log
         - /l
@@ -215,7 +209,7 @@ settings:
             enabled: false
             # WorldNames where we need to force the spawn location
             # Case-sensitive!
-            worlds: 
+            worlds:
             - world
             - world_nether
             - world_the_end
@@ -231,7 +225,7 @@ settings:
         #     AllowedRestrictedUser:
         #     - playername;127.0.0.1
         #     - playername;regex:127\.0\.0\..*
-        AllowedRestrictedUser: 
+        AllowedRestrictedUser:
         - server_land;127.0.0.1
         - server;127.0.0.1
         - bukkit;127.0.0.1
@@ -340,7 +334,7 @@ settings:
         # - '123456'
         # - 'password'
         # - 'help'
-        unsafePasswords: 
+        unsafePasswords:
         - '12345678'
         - password
         - qwertyui
@@ -368,7 +362,7 @@ settings:
         # EMAIL = password is generated and sent to the email provided by the user.
         # More info at https://github.com/AuthMe/AuthMeReloaded/wiki/Registration
         type: PASSWORD
-        # Second argument the /register command should take: 
+        # Second argument the /register command should take:
         # NONE = no 2nd argument
         # CONFIRMATION = must repeat first argument (pass or email)
         # EMAIL_OPTIONAL = for password register: 2nd argument can be empty or have email address
@@ -490,11 +484,11 @@ Protection:
     # https://dev.maxmind.com/geoip/legacy/codes/iso3166/
     # Use "LOCALHOST" for local addresses.
     # PLEASE USE QUOTES!
-    countries: 
+    countries:
     - LOCALHOST
     # Countries not allowed to join the server and register
     # PLEASE USE QUOTES!
-    countriesBlacklist: 
+    countriesBlacklist:
     - A1
     # Do we need to enable automatic antibot system?
     enableAntiBot: true

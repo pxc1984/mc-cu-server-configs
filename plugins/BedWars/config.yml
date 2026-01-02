@@ -5,7 +5,7 @@ keep-inventory-on-death: false
 in-lobby-colored-leather-by-team: true
 jointeam-entity-show-name: true
 friendlyfire: false
-player-drops: true
+player-drops: false
 join-randomly-after-lobby-timeout: false
 prevent-killing-villagers: true
 compass-enabled: true
@@ -27,12 +27,12 @@ gived-player-respawn-items: []
 disable-hunger: false
 automatic-coloring-in-shop: true
 sell-max-64-per-click-in-shop: true
-enable-cheat-command-for-admins: false
+enable-cheat-command-for-admins: true
 shopkeepers-are-silent: true
 destroy-placed-blocks-by-explosion-except: []
 destroy-placed-blocks-by-explosion: true
 holo-above-bed: true
-allow-spectator-join: false
+allow-spectator-join: true
 disable-server-message:
   player-join: false
   player-leave: false
@@ -114,28 +114,37 @@ vault:
     win: 20
     final-kill: 5
     bed-destroy: 0
+
 resources:
+  emerald: # resource name
+    material: EMERALD
+    color: GREEN
+    name: Emerald
+    interval: 10
+    translate: resource_emerald
+    spread: 1.0
+  diamond:
+    material: DIAMOND
+    color: BLUE
+    name: Diamond
+    interval: 10
+    translate: resource_diamond
+    spread: 1.0
+  iron:
+    material: IRON_INGOT
+    color: WHITE
+    name: Iron
+    interval: 2
+    translate: resource_iron
+    spread: 1.0
   gold:
     material: GOLD_INGOT
     color: GOLD
     name: Gold
-    interval: 20
+    interval: 8
     translate: resource_gold
     spread: 1.0
-  iron:
-    material: IRON_INGOT
-    color: GRAY
-    name: Iron
-    interval: 10
-    translate: resource_iron
-    spread: 1.0
-  bronze:
-    material: BRICK
-    color: DARK_RED
-    name: Bronze
-    interval: 1
-    translate: resource_bronze
-    spread: 1.0
+
 respawn:
   protection-enabled: true
   protection-time: 10
@@ -289,7 +298,7 @@ database:
   driver: default
   params:
     useSSL: false
-    serverTimezone: GMT
+    serverTimezone: Etc/UTC
     autoReconnect: true
     cachePrepStmts: true
     prepStmtCacheSize: 250
