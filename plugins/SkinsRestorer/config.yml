@@ -56,12 +56,12 @@ messages:
 # [!] Make sure to fill in database.connectionOptions if you're using certificate / ssl authentication. [!]
 # [!] If you're not using ssl, change sslMode=trust to sslMode=disable [!]
 database:
-    enabled: false
-    host: localhost
+    enabled: true
+    host: mysql
     port: 3306
-    database: db
-    username: root
-    password: pass
+    database: mccu
+    username: mccu
+    password: dimatrushintop
     maxPoolSize: 10
     tablePrefix: sr_
     connectionOptions: sslMode=trust&serverTimezone=UTC

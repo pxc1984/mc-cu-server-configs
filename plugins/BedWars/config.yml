@@ -295,6 +295,7 @@ database:
   password: dimatrushintop
   table-prefix: bw_
   type: mysql
+  
   driver: default
   params:
     useSSL: false

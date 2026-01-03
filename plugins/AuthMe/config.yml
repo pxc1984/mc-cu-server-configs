@@ -5,10 +5,14 @@ DataSource:
     # Should we try to use VirtualThreads(Java 21+) for database cache loader?
     useVirtualThreadsCache: false
 
-    # ВКЛЮЧАЕМ МУСКУЛ
+    # ВКЛЮЧАЕМ МУСКУЛ (ЗДЕСЬ ВСЁ ЧТО ПОМЕНЯЛИ)
     backend: MYSQL
     mySQLHost: mysql
     mySQLPort: '3306'
+    mySQLUsername: mccu
+    mySQLPassword: 'dimatrushintop'
+    mySQLDatabase: mccu
+    mySQLTablename: authme
     # ВКЛЮЧАЕМ МУСКУЛ
 
     MariaDbSslMode: disabled
@@ -24,13 +28,6 @@ DataSource:
     # If you are using MariaDB, use MariaDbSslMode instead.
     mySQLAllowPublicKeyRetrieval: true
     # Username to connect to the MySQL database
-
-    # ЭТО ТОЖЕ МЕНЯЕМ ДЛЯ МУСКУЛА
-    mySQLUsername: mccu
-    mySQLPassword: 'dimatrushintop'
-    mySQLDatabase: mccu
-    mySQLTablename: authme
-    # ВКЛЮЧАЕМ МУСКУЛ
 
     mySQLColumnId: id
     # Column for storing or checking players nickname
