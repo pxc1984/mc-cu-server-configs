@@ -4,9 +4,9 @@ set -u
 usage() {
   cat <<'EOF'
 Usage:
-  create_links.sh <folders_list.txt> [source_base_dir]
+  copy_folders.sh <folders_list.txt> [source_base_dir]
 
-Creates symlinks in the CURRENT directory (pwd) for each folder name listed in folders_list.txt.
+Copies folders to the CURRENT directory (pwd) for each folder name listed in folders_list.txt.
 
 Defaults:
   - source_base_dir: directory that contains folders_list.txt
@@ -14,6 +14,7 @@ Defaults:
 Notes:
   - Empty lines and lines starting with # are ignored.
   - If a destination name already exists, it will be skipped with a warning.
+  - Copies are made recursively, preserving permissions, timestamps, and attributes.
 EOF
 }
 
@@ -75,12 +76,10 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     continue
   fi
 
-  ln -s "$src" "$dst"
-  echo "OK: $dst -> $src"
+  cp -a "$src" "$dst"
+  echo "OK: copied $src -> $dst"
   ((ok_count++)) || true
 done < "$LIST_FILE"
 
-echo "Done. created=$ok_count skipped=$skip_count failed=$fail_count"
+echo "Done. copied=$ok_count skipped=$skip_count failed=$fail_count"
 exit 0
-
-

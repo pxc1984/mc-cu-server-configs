@@ -4,13 +4,18 @@ set -u
 usage() {
   cat <<'EOF'
 Usage:
-  delete_links.sh <folders_list.txt>
+  delete_folders.sh <folders_list.txt> [--force]
 
-Deletes symlinks (only symlinks) from the CURRENT directory (pwd) for each folder name listed in folders_list.txt.
+Deletes folders/files from the CURRENT directory (pwd) for each name listed in folders_list.txt.
+
+Options:
+  --force    Skip confirmation prompt
+
+⚠️  WARNING: This performs RECURSIVE deletion!
 
 Notes:
   - Empty lines and lines starting with # are ignored.
-  - If a path exists but is NOT a symlink, it will be skipped with a warning (for safety).
+  - Without --force, will ask for confirmation before deletion.
 EOF
 }
 
@@ -20,6 +25,8 @@ if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
 fi
 
 LIST_FILE="${1:-}"
+FORCE="${2:-}"
+
 if [[ -z "$LIST_FILE" ]]; then
   usage
   exit 2
@@ -33,39 +40,54 @@ DEST_DIR="$(pwd)"
 
 trim() {
   local s="$1"
-  # trim leading/trailing whitespace
   s="${s#"${s%%[![:space:]]*}"}"
   s="${s%"${s##*[![:space:]]}"}"
   printf '%s' "$s"
 }
 
-del_count=0
-skip_count=0
-
+# Collect items to delete
+items_to_delete=()
 while IFS= read -r line || [[ -n "$line" ]]; do
   line="${line%%#*}"
   name="$(trim "$line")"
   [[ -z "$name" ]] && continue
 
   dst="$DEST_DIR/$name"
-
-  if [[ -L "$dst" ]]; then
-    rm -f -- "$dst"
-    echo "OK: removed symlink: $dst"
-    ((del_count++)) || true
-    continue
+  
+  if [[ -e "$dst" || -L "$dst" ]]; then
+    items_to_delete+=("$dst")
   fi
-
-  if [[ -e "$dst" ]]; then
-    echo "WARN: exists but is not a symlink, skipping: $dst" >&2
-    ((skip_count++)) || true
-    continue
-  fi
-
-  # doesn't exist - ignore
 done < "$LIST_FILE"
 
-echo "Done. removed=$del_count skipped=$skip_count"
+# Check if anything to delete
+if [[ ${#items_to_delete[@]} -eq 0 ]]; then
+  echo "Nothing to delete."
+  exit 0
+fi
+
+# Show what will be deleted
+echo "The following items will be DELETED:"
+printf '  %s\n' "${items_to_delete[@]}"
+echo ""
+echo "Total: ${#items_to_delete[@]} items in directory: $DEST_DIR"
+
+# Ask for confirmation unless --force
+if [[ "$FORCE" != "--force" ]]; then
+  read -p "Continue? [y/N] " -n 1 -r
+  echo
+  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "Aborted."
+    exit 0
+  fi
+fi
+
+# Perform deletion
+del_count=0
+for dst in "${items_to_delete[@]}"; do
+  rm -rf -- "$dst"
+  echo "OK: removed: $dst"
+  ((del_count++)) || true
+done
+
+echo "Done. removed=$del_count"
 exit 0
-
-
