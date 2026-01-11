@@ -9,6 +9,7 @@ on:
 jobs:
   notify-manager:
     runs-on: ubuntu-latest
+    environment: deploy
     steps:
       - name: Send update webhook
         env:
