@@ -30,28 +30,28 @@ spawners:
   location: -0.4675257203518833;63.5;77.62342476166992;0.0;0.0
   customName: null
   startLevel: 1.0
-  team: null
+  team: Blue
   type: gold
 - maxSpawnedResources: -1
   hologramEnabled: true
   location: 1.6872884814707947;63.5;77.61825718784849;0.0;0.0
   customName: null
   startLevel: 1.0
-  team: null
+  team: Blue
   type: iron
 - maxSpawnedResources: -1
   hologramEnabled: true
   location: 1.490120091685187;63.5;-77.5324630335726;0.0;0.0
   customName: null
   startLevel: 1.0
-  team: null
+  team: Red
   type: iron
 - maxSpawnedResources: -1
   hologramEnabled: true
   location: -0.23287810085800476;63.5;-77.52224087461055;0.0;0.0
   customName: null
   startLevel: 1.0
-  team: null
+  team: Red
   type: gold
 - maxSpawnedResources: -1
   hologramEnabled: true

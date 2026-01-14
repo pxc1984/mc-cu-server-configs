@@ -1,0 +1,107 @@
+# ScreamingBedWars / BedWars (ScreamingSandals) — магазин улучшений (upgrades)
+#
+# ВАЖНО:
+# - Этот файл НЕ использует UPGRADE_* типы.
+# - Формат — YAML-СПИСОК (list) элементов, как в официальной документации:
+#   https://docs.screamingsandals.org/BedWars/0.2.21/upgrades/
+# - Каждый элемент улучшения имеет как минимум: price, price-type, upgrade.entities и stack.
+#
+# Ниже — рабочий пробный пример "Forge": ускорение командных генераторов
+# через увеличение "уровня" спавнеров (type: spawner).
+#
+# Если у вас в arena.yml спавнеры базы НЕ привязаны к команде (team: null),
+# то режим spawner-type может не сработать — тогда нужно использовать spawner-name
+# (задайте customName спавнеру) или team-upgrade (если у вас настроено).
+
+# В BedWars 0.2.42.1 YAML loader ожидает, что верхний уровень будет Map (объект),
+# как в обычном `shop.yml`. Поэтому элементы кладём под ключ `data:`.
+data:
+  # ------ IRON FORGE (ЖЕЛЕЗО ПО УРОВНЯМ) ------
+  #
+  # Требование: спавнеры iron должны быть team-spawner'ами (team != null в arena.yml).
+  #
+  # ВАЖНО ПРО ПРОГРЕССИЮ:
+  # - BedWars хранит spawner "level" числом с плавающей точкой, но для
+  #   ресурсов это обычно округляется до количества предметов за спавн.
+  # - Поэтому делаем ЦЕЛЕВЫЕ уровни: 2 / 4 / 6 (железо 2/4/6 за спавн).
+  # - add-levels ставим большим числом, чтобы апгрейд гарантированно
+  #   "дотягивал" до max-level (который мы используем как целевой уровень).
+  #
+  # Ограничение:
+  # - В конфиге апгрейдов есть max-level (и он работает), но нет явного
+  #   "min-level/required-level" в публичной документации для блокировки
+  #   Tier II до Tier I. Поэтому это место будет "социальным" правилом
+  #   (описание + порядок), но порядок мы всё равно делаем безопасным:
+  #   даже если купить II сразу — уровень станет ровно 4, без дробей.
+
+  # I Уровень: 2 алмаза
+  - price: 2
+    price-type: diamond
+    upgrade:
+      entities:
+        - type: spawner
+          spawner-type: iron
+          add-levels: 999
+          max-level: 2
+          shop-name: "&fЖелезо: &aI уровень &7(%team%)"
+          notify-team: true
+    stack:
+      type: iron_ingot
+      amount: 1
+      display-name: "&fЖелезо: &aI уровень"
+      enchants:
+        unbreaking: 1
+      lore:
+        - "&7Стоимость: &b2 алмаза"
+        - "&7После покупки: &f2 железа за спавн"
+        - "&8Покупать по порядку: I → II → III"
+
+  # II Уровень: 5 алмазов
+  - price: 5
+    price-type: diamond
+    upgrade:
+      entities:
+        - type: spawner
+          spawner-type: iron
+          add-levels: 999
+          max-level: 4
+          shop-name: "&fЖелезо: &aII уровень &7(%team%)"
+          notify-team: true
+    stack:
+      type: iron_ingot
+      amount: 1
+      display-name: "&fЖелезо: &aII уровень"
+      enchants:
+        unbreaking: 2
+      lore:
+        - "&7Стоимость: &b5 алмазов"
+        - "&7После покупки: &f4 железа за спавн"
+        - "&8Рекомендуется купить после I уровня"
+
+  # III Уровень: 8 алмазов
+  - price: 8
+    price-type: diamond
+    upgrade:
+      entities:
+        - type: spawner
+          spawner-type: iron
+          add-levels: 999
+          max-level: 6
+          shop-name: "&fЖелезо: &aIII уровень &7(%team%)"
+          notify-team: true
+    stack:
+      type: iron_ingot
+      amount: 1
+      display-name: "&fЖелезо: &aIII уровень"
+      enchants:
+        unbreaking: 3
+      lore:
+        - "&7Стоимость: &b8 алмазов"
+        - "&7После покупки: &f6 железа за спавн"
+        - "&8Рекомендуется купить после II уровня"
+
+# ---- ШАБЛОНЫ ДЛЯ ДРУГИХ УЛУЧШЕНИЙ (Sharpness/Protection/Haste/Traps) ----
+# В вашей версии доки (0.2.21) подробно описан только spawner-upgrade.
+# Если вы скажете точную версию BedWars/ScreamingBedWars на сервере и/или пришлёте
+# ошибку из консоли при открытии апгрейд-шопа, я добавлю корректные энтити-типы
+# для Sharpness/Protection/Haste/Traps, чтобы они реально работали.
