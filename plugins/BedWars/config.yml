@@ -120,28 +120,28 @@ resources:
     material: EMERALD
     color: GREEN
     name: Emerald
-    interval: 10
+    interval: 65
     translate: resource_emerald
     spread: 1.0
   diamond:
     material: DIAMOND
     color: BLUE
     name: Diamond
-    interval: 10
+    interval: 30
     translate: resource_diamond
     spread: 1.0
   iron:
     material: IRON_INGOT
     color: WHITE
     name: Iron
-    interval: 2
+    interval: 1
     translate: resource_iron
     spread: 1.0
   gold:
     material: GOLD_INGOT
     color: GOLD
     name: Gold
-    interval: 8
+    interval: 6
     translate: resource_gold
     spread: 1.0
 

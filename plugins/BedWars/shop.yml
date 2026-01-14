@@ -1,261 +1,360 @@
-# data:
+data:
+  # ЗЕЛЬЯ (Potions)
+  - stack:
+      type: potion
+      display-name: "Зелья"
+      lore:
+        - "Временные усиления для тактических преимуществ."
+    items:
+      - stack:
+          type: potion
+          tag: '{Potion:"minecraft:swiftness",custom_potion_effects:[{id:"minecraft:speed",amplifier:1,duration:900}]}'
+        price: 1 emerald
+      - stack:
+          type: potion
+          tag: '{Potion:"minecraft:leaping",custom_potion_effects:[{id:"minecraft:jump_boost",amplifier:4,duration:900}]}'
+        price: 1 emerald
 
-# БРОНЯ (Armor) - Используем систему buy-group для прогрессии[citation:2]
-- stack:
-    type: diamond_chestplate
-    display-name: "&bБроня"
-    lore:
-      - "&7Защити себя от вражеских атак."
-      - "&7Приобретай лучшую броню по мере игры."
-  buy-group:
-    name: Armor
-    level: 1
-  keep-on-death: true
-  items:
-   - price: 20 of iron # Стартовая кожаная броня
-     stack:
-       type: leather_chestplate
-       properties: "applycolorbyteam"
-       enchants:
-         protection: 1
-   - price: 20 of iron
-     stack:
-       type: leather_leggings
-       properties: "applycolorbyteam"
-       enchants:
-         protection: 1
-   - price: 40 of iron # Вторая ступень - цепная броня
-     stack:
-       type: chainmail_chestplate
-       enchants:
-         protection: 2
-   - price: 40 of iron
-     stack:
-       type: chainmail_leggings
-       enchants:
-         protection: 2
-   - price: 1 of gold # Третья ступень - железная броня
-     stack:
-       type: iron_chestplate
-       enchants:
-         protection: 2
-   - price: 1 of gold
-     stack:
-       type: iron_leggings
-       enchants:
-         protection: 2
-   - price: 2 of diamond # Элитная броня - алмазная
-     stack:
-       type: diamond_chestplate
-       enchants:
-         protection: 3
-   - price: 2 of diamond
-     stack:
-       type: diamond_leggings
-       enchants:
-         protection: 3
+  # ЛУКИ (Bows)
+  - stack:
+      type: bow
+      display-name: "Луки и Стрелы"
+      lore:
+        - "Дальнобойное оружие для атаки на расстоянии."
+    items:
+      - stack:
+          type: bow
+        price: 12 gold
+      - stack:
+          type: bow
+          enchants:
+            power: 1
+        price: 20 gold
+      - stack:
+          type: bow
+          enchants:
+            power: 1
+            punch: 1
+        price: 6 emerald
+      - stack:
+          type: arrow
+          amount: 6
+        price: 2 gold
+  # БРОНЯ - Кожаная
+  - stack:
+      type: leather_chestplate
+      display-name: "Кожаная броня"
+    items:
+      - stack:
+          type: leather_helmet
+        price: 1 iron
+      - stack:
+          type: leather_chestplate
+        price: 2 iron
+      - stack:
+          type: leather_leggings
+        price: 2 iron
+      - stack:
+          type: leather_boots
+        price: 1 iron
+  # БРОНЯ - Кольчужная
+  - stack:
+      type: chainmail_chestplate
+      display-name: "Кольчужная броня"
+    items:
+      - stack:
+          type: chainmail_helmet
+        price: 40 iron
+      - stack:
+          type: chainmail_chestplate
+        price: 64 iron
+      - stack:
+          type: chainmail_leggings
+        price: 56 iron
+      - stack:
+          type: chainmail_boots
+        price: 32 iron
 
-# МЕЧИ (Swords) - Основное оружие ближнего боя[citation:3]
-- stack:
-    type: diamond_sword
-    display-name: "&cМечи"
-    lore:
-      - "&7Основное оружие для ближнего боя."
-      - "&7Заточка увеличивает урон."
-  buy-group:
-    name: Swords
-    level: 1
-  keep-on-death: true
-  items:
-   - price: 10 of iron # Стартовый меч
-     stack:
-       type: wooden_sword
-       enchants:
-         sharpness: 1
-   - price: 40 of iron # Улучшение
-     stack:
-       type: stone_sword
-       enchants:
-         sharpness: 1
-   - price: 1 of gold # Крепкий меч среднего уровня
-     stack:
-       type: iron_sword
-       enchants:
-         sharpness: 2
-   - price: 4 of diamond[citation:3] # Мощный меч поздней игры
-     stack:
-       type: diamond_sword
-       enchants:
-         sharpness: 3
-   - price: 8 of emerald[citation:3] # Легендарный меч
-     stack:
-       type: diamond_sword
-       display-name: "&6Изумрудный клинок"
-       enchants:
-         sharpness: 4
-         fire_aspect: 1
+  # БРОНЯ - Железная
+  - stack:
+      type: iron_chestplate
+      display-name: "Железная броня"
+    items:
+      - stack:
+          type: iron_helmet
+        price: 7 gold
+      - stack:
+          type: iron_chestplate
+        price: 12 gold
+      - stack:
+          type: iron_leggings
+        price: 10 gold
+      - stack:
+          type: iron_boots
+        price: 6 gold
 
-# ИНСТРУМЕНТЫ (Tools) - Для быстрого сноса блоков[citation:3]
-- stack: "diamond_pickaxe;1;Инструменты;Ускоряют добычу блоков и пробивание защиты."
-  items:
-   - price: 10 of iron # Для быстрой добычи шерсти/песчаника
-     stack:
-       type: wooden_pickaxe
-       enchants:
-         efficiency: 1
-   - price: 20 of iron[citation:3] # Для эндерстоуна
-     stack:
-       type: stone_pickaxe
-       enchants:
-         efficiency: 2
-   - price: 1 of gold # Для обсидиана
-     stack:
-       type: iron_pickaxe
-       enchants:
-         efficiency: 3
-   - price: 2 of diamond[citation:3] # Мощный инструмент
-     stack:
-       type: diamond_pickaxe
-       enchants:
-         efficiency: 4
-         unbreaking: 1
-   - price: 5 of iron # Топор для деревянных блоков
-     stack:
-       type: stone_axe
-       enchants:
-         efficiency: 1
-   - price: 20 of iron[citation:3] # Ножницы для шерсти
-     stack:
-       type: shears
+  # БРОНЯ - Алмазная
+  - stack:
+      type: diamond_chestplate
+      display-name: "Алмазная броня"
+    items:
+      - stack:
+          type: diamond_helmet
+        price: 7 diamond
+      - stack:
+          type: diamond_chestplate
+        price: 12 diamond
+      - stack:
+          type: diamond_leggings
+        price: 10 diamond
+      - stack:
+          type: diamond_boots
+        price: 6 diamond
 
-# ЛУКИ И СТРЕЛЫ (Bows & Arrows)
-- stack: "bow;1;Дальний бой;Атакуй врагов на расстоянии."
-  items:
-   - price: 1 of gold # Базовый лук
-     stack:
-       type: bow
-       enchants:
-         power: 1
-   - price: 6 of gold # Улучшенный лук
-     stack:
-       type: bow
-       enchants:
-         power: 2
-   - price: 2 of diamond # Мощный лук
-     stack:
-       type: bow
-       enchants:
-         power: 3
-         punch: 1
-   - price: 1 of emerald # Элитный лук с бесконечностью
-     stack:
-       type: bow
-       display-name: "&aЛук бесконечности"
-       enchants:
-         power: 3
-         infinity: 1
-         unbreaking: 1
-   - price: 4 of gold # Пакет стрел к обычному луку
-     stack:
-       type: arrow
-       amount: 8
+  # ОРУЖИЕ
+  - stack:
+      type: diamond_sword
+      display-name: "Оружие ближнего боя"
+      lore:
+        - "Мечи и топоры для ближнего боя."
+    items:
+      - stack:
+          type: wooden_sword
+        price: 10 iron
+      - stack:
+          type: wooden_axe
+        price: 32 iron
+      - stack:
+          type: stone_sword
+        price: 48 iron
+      - stack:
+          type: stone_axe
+        price: 64 iron
+      - stack:
+          type: iron_sword
+        price: 7 gold
+      - stack:
+          type: iron_axe
+        price: 12 gold
+      - stack:
+          type: diamond_sword
+        price: 12 diamond
+      - stack:
+          type: diamond_axe
+        price: 18 diamond
+      - stack:
+          type: stick
+          enchants:
+            knockback: 1
+        price: 5 gold
+      - stack:
+          type: shield
+        price: 10 gold
 
-# БЛОКИ (Blocks) - Для строительства и передвижения
-- stack: "sandstone;1;Блоки;Строй пути и защиту."
-  linebreak: before
-  items:
-   - cut_sandstone;16 for 4 of iron # Основной дешевый блок
-   - end_stone;12 for 8 of iron[citation:3] # Прочный блок для обороны
-   - iron_block;4 for 16 of iron # Для быстрого укрепления
-   - obsidian;2 for 1 of emerald[citation:3] # Максимальная защита для кровати
-   - glowstone;4 for 1 of gold # Освещение
-   - price: 4 of iron
-     properties: "applycolorbyteam"
-     stack: glass;8
 
-# ЕДА И ЗЕЛЬЯ (Food & Potions)
-- stack: "cooked_porkchop;1;Восстановление;Восполни здоровье и получи эффекты."
-  row: 3
-  column: 2
-  items:
-   - cooked_porkchop;4 for 5 of iron
-   - golden_apple for 1 of gold # Срочное исцеление в бою
-   - bread;8 for 12 of iron
-   
-- stack:
-    type: potion
-    display-name: "&dЗелья"
-    lore:
-      - "&7Временные усиления для решающих сражений."
-    potion-type: swiftness
-  row: 3
-  column: 6
-  items:
-    - stack:
-        type: potion
-        potion-type: healing
-        amount: 2
-      price: 4 of iron
-    - stack:
-        type: potion
-        potion-type: swiftness
-        duration: 180
-      price: 1 of gold
-    - stack:
-        type: potion
-        potion-type: strength
-        duration: 90
-      price: 2 of diamond
-    - stack:
-        type: potion
-        potion-type: regeneration
-        duration: 45
-      price: 1 of emerald
+  # ИНСТРУМЕНТЫ
+  - stack:
+      type: diamond_pickaxe
+      display-name: "Инструменты"
+      lore:
+        - "Для быстрого разрушения блоков."
+    items:
+      - stack:
+          type: wooden_pickaxe
+          enchants:
+            efficiency: 1
+        price: 10 iron
+      - stack:
+          type: stone_pickaxe
+          enchants:
+            efficiency: 1
+        price: 1 gold
+      - stack:
+          type: iron_pickaxe
+          enchants:
+            efficiency: 1
+        price: 10 gold
+      - stack:
+          type: diamond_pickaxe
+          enchants:
+            efficiency: 1
+        price: 8 diamond
 
-# СПЕЦИАЛЬНЫЕ ПРЕДМЕТЫ (Specials) - Мощные тактические инструменты[citation:3]
-- stack: "tnt;1;Особые предметы;Тактические инструменты для контроля боя."
-  column: center
-  items:
-   - price: 35 of iron[citation:3] # TNT для прорыва обороны
-     stack: "tnt;1;TNT"
-   - price: 75 of iron[citation:3] # Огненный шар для сбивания с мостов
-     stack:
-       type: fire_charge
-       display-name: "&6Огненный шар"
-   - price: 40 of iron[citation:3] # Мгновенный мост для атаки
-     stack:
-       type: ender_pearl
-       display-name: "&5Жемчуг Эндера"
-   - price: 2 of emerald[citation:3] # Мощное телепорт-средство
-     stack:
-       type: ender_pearl
-       display-name: "&dТелепорт-жемчуг"
-       amount: 2
-   - price: 1 of diamond # Ловушка для защиты кровати
-     properties:
-       - name: "Trap"
-         data:
-           - sound: ENTITY_SHEEP_AMBIENT
-           - effect:
-               effect: blindness
-               amplifier: 1
-               duration: 60
-           - effect:
-               effect: slowness
-               amplifier: 1
-               duration: 60
-     stack:
-       type: string
-       display-name: "&eЛовушка"
-       lore:
-         - "&7Активируется когда враг подходит"
-         - "&7к вашей кровати."
-   - price: 2 of emerald # Голем для защиты базы[citation:1]
-     properties:
-       - name: "Golem"
-         speed: 0.3
-         follow-range: 12.0
-     stack:
-       type: iron_ingot
-       display-name: "&fЖелезный голем"
-       amount: 4
+  # ПОЛЕЗНЫЕ ПРЕДМЕТЫ
+  - stack:
+      type: tnt
+      display-name: "Полезные предметы"
+      lore:
+        - "Тактические инструменты для различных ситуаций."
+    items:
+      - stack:
+          type: chest
+        price: 3 gold
+      - stack:
+          type: ender_chest
+        price: 10 gold
+      - stack:
+          type: golden_apple
+        price: 3 gold
+      - stack:
+          type: ender_pearl
+        price: 4 emerald
+      - price: 5 gold
+        properties:
+          - name: "AutoIgniteableTnt"
+            explosion-time: 5
+            damage-placer: false
+        stack:
+          type: tnt
+          display-name: "Autoigniteable TNT"
+      - price: 5 gold
+        properties:
+          - name: "WarpPowder"
+            delay: 6
+        stack:
+          type: gunpowder
+          display-name: "Warp Powder"
+          lore:
+            - "When using this powder you'll get"
+            - "teleported to you spawn point within 6 seconds"
+            - "Warning: Any movement will stop the process"
+      - price: 30 iron
+        properties:
+          - name: "Trap"
+            data:
+              - sound: ENTITY_SHEEP_AMBIENT
+              - effect:
+                  effect: blindness
+                  amplifier: 2
+                  duration: 100
+                  ambient: true
+                  particles: true
+                  icon: true
+              - effect:
+                  effect: weakness
+                  amplifier: 2
+                  duration: 100
+                  ambient: true
+                  particles: true
+                  icon: true
+              - effect:
+                  effect: slowness
+                  amplifier: 2
+                  duration: 100
+                  ambient: true
+                  particles: true
+                  icon: true
+        stack:
+          type: string
+          display-name: "Trap"
+          lore:
+            - "Get informed if an enemy steps on your trap"
+            - "and your enemy won't be able to move properly."
+      - price: 5 diamond
+        properties:
+          - name: "MagnetShoes"
+            probability: 75
+        stack:
+          type: iron_boots
+          display-name: "Magnet-Shoes"
+          lore:
+            - "Wear those shoes and have a 75%"
+            - "chance of getting no knockback!"
+      - price: 1 emerald
+        properties: "Tracker"
+        stack:
+          type: compass
+          display-name: "Tracker"
+          lore:
+            - "Wanna know where your closest target is?"
+            - "Let's try this out!"
+      - price: 5 diamond
+        properties:
+          - name: "rescueplatform"
+            delay: 5
+        stack:
+          type: blaze_rod
+          display-name: "Rescue Platform"
+          lore:
+            - "Protect yourself from falling into"
+            - "void with a Rescue Platform."
+            - "This is your last hope!"
+      - price: 5 gold
+        properties:
+          - name: "arrowblocker"
+            delay: 5
+        stack:
+          type: ender_eye
+          display-name: "Arrow Blocker"
+          lore:
+            - "Block arrows that are coming"
+            - "for you with black magic."
+            - "I mean, with this item."
+      - price: 64 bronze
+        properties:
+          - name: "protectionwall"
+        stack:
+          type: bricks
+          display-name: "Protection Wall"
+          lore:
+            - "Instantly builds a wall that"
+            - "can save your life!"
+      - price: 64 iron
+        properties:
+          - name: "Golem"
+            speed: 0.25
+            follow-range: 16.0
+        stack:
+          type: iron_golem_spawn_egg
+          display-name: "Golem"
+          lore:
+            - "An iron golem that will protect"
+            - "your team from the enemies."
+      - price: 30 gold
+        properties: "TNTSheep"
+        stack:
+          type: sheep_spawn_egg
+          display-name: "TNT Sheep"
+          lore:
+            - "Use the TNT-Sheep! It will"
+            - "walk towards your closest enemy"
+            - "and explode within 8 seconds!"
+      - price: 40 iron
+        properties: "ThrowableFireball"
+        stack:
+          type: fire_charge
+          display-name: "Fireball"
+          lore:
+            - "Is it a bird? Is it a plane?"
+            - "By the time you know"
+            - "you are dead!"
+
+  # БЛОКИ
+  - stack:
+      type: sandstone
+      display-name: "Блоки"
+      lore:
+        - "Для строительства мостов и защиты."
+    items:
+      - stack:
+          type: concrete
+          amount: 16
+        price: 4 iron
+        properties:
+          applycolorbyteam: true
+      - stack:
+          type: end_stone
+          amount: 12
+        price: 8 iron
+      - stack:
+          type: oak_planks
+          amount: 16
+        price: 4 gold
+      - stack:
+          type: glass
+          amount: 8
+        price: 1 gold
+      - stack:
+          type: obsidian
+          amount: 2
+        price: 2 emerald
