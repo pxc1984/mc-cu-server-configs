@@ -265,7 +265,7 @@ data:
           lore:
             - "Wanna know where your closest target is?"
             - "Let's try this out!"
-      - price: 5 diamond
+      - price: 12 gold
         properties:
           - name: "rescueplatform"
             delay: 5
@@ -296,11 +296,11 @@ data:
           lore:
             - "Instantly builds a wall that"
             - "can save your life!"
-      - price: 64 iron
+      - price: 15 gold
         properties:
           - name: "Golem"
-            speed: 0.25
-            follow-range: 16.0
+            speed: 0.20
+            follow-range: 12.0
         stack:
           type: iron_golem_spawn_egg
           display-name: "Golem"
