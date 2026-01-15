@@ -159,7 +159,7 @@ constant:
   cake-target-block-eating: inherit
   target-block-explosions: inherit
   invisible-lobby-on-game-start: inherit
-arenaTime: WORLD
-arenaWeather: default
+arenaTime: DAY
+arenaWeather: clear
 lobbyBossBarColor: default
 gameBossBarColor: default

@@ -163,28 +163,13 @@ data:
         price: 2 emerald
 
   # ЕДА
+  # Голод отключён, поэтому оставляем только золотые яблоки как боевой расходник.
   - stack:
-      type: cooked_beef
+      type: golden_apple
       display-name: "Еда"
       lore:
-        - "Восстановление здоровья и сытости."
+        - "Боевые расходники."
     items:
-      - stack:
-          type: cookie
-          amount: 10
-        price: 10 iron
-      - stack:
-          type: apple
-          amount: 5
-        price: 12 iron
-      - stack:
-          type: cooked_beef
-          amount: 5
-        price: 2 gold
-      - stack:
-          type: cooked_beef
-          amount: 12
-        price: 4 gold
       - stack:
           type: golden_apple
           amount: 1
