@@ -25,56 +25,56 @@ teams:
     spawn: 0.37114513448322767;72.0;78.8691013481724;-179.85205;-0.15000983
     actualName: Синие
 spawners:
-- maxSpawnedResources: -1
+- maxSpawnedResources: 8
   hologramEnabled: true
   location: 1.5846038726960254;71.5;-81.43645454248495;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: gold
-- maxSpawnedResources: -1
+- maxSpawnedResources: 48
   hologramEnabled: true
   location: -0.5700578271104564;71.5;-81.43636058615725;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: iron
-- maxSpawnedResources: -1
+- maxSpawnedResources: 8
   hologramEnabled: true
   location: -0.5329882932683789;71.5;82.63902193571474;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: gold
-- maxSpawnedResources: -1
+- maxSpawnedResources: 48
   hologramEnabled: true
   location: 1.697632299851956;71.5;82.72791213632055;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: iron
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: -46.347306548551614;70.0;-9.53959071484276;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: diamond
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: 47.30000001192093;70.0;10.647824993012254;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: diamond
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: 17.326907018585104;70.0;-5.4895711454914995;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: emerald
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: -16.547702142714485;70.0;6.506741030572698;0.0;0.0
   customName: null
@@ -83,10 +83,26 @@ spawners:
   type: emerald
 stores:
 - isBaby: 'false'
-  loc: -5.699999988079071;72.0;80.06636076206505;-89.40057;-0.74999756
+  loc: 6.490178121488753;72.0;79.98134666851371;90.59949;-0.89998657
+  parent: 'false'
+  shop: upgradeShop.yml
+  name: §a§lУлучшения
+  skin: null
+  team: null
+  type: VILLAGER
+- isBaby: 'false'
+  loc: -5.699999988079071;72.0;80.01693827123087;-90.30035;1.2000291
   parent: 'false'
   shop: shop.yml
-  name: §a§lVillager_shop
+  name: §a§lМагазин
+  skin: null
+  team: null
+  type: VILLAGER
+- isBaby: 'false'
+  loc: -5.489971091160164;72.0;-78.82819511824935;-89.8508;0.30001104
+  parent: 'false'
+  shop: upgradeShop.yml
+  name: §a§lУлучшения
   skin: null
   team: null
   type: VILLAGER

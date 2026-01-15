@@ -20,10 +20,18 @@ spawner-holograms-countdown: true
 damage-when-player-is-not-in-arena: false
 remove-unused-target-blocks: true
 allow-block-falling: true
-game-start-items: false
-player-respawn-items: false
-gived-game-start-items: []
-gived-player-respawn-items: []
+game-start-items: true
+player-respawn-items: true
+gived-game-start-items:
+  - leather_helmet
+  - leather_chestplate
+  - leather_leggings
+  - leather_boots
+gived-player-respawn-items:
+  - leather_helmet
+  - leather_chestplate
+  - leather_leggings
+  - leather_boots
 disable-hunger: false
 automatic-coloring-in-shop: true
 sell-max-64-per-click-in-shop: true
@@ -363,10 +371,10 @@ rewards:
 lore:
   generate-automatically: true
   text:
-  - '&7Price:'
-  - '&7%price% %resource%'
-  - '&7Amount:'
-  - '&7%amount%'
+  - '&7Цена:'
+  - '&b%price% &7%resource%'
+  - '&7Количество:'
+  - '&b%amount%'
 sign:
   lines:
   - '&c&l[BedWars]'

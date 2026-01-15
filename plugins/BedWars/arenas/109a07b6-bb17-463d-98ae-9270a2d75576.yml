@@ -11,76 +11,90 @@ minPlayers: 2
 postGameWaiting: 3
 teams:
   Красные:
-    isNewColor: false
+    isNewColor: true
     color: RED
     maxPlayers: 4
     bed: 2.0;77.0;-74.0;0.0;0.0
     spawn: 2.4958819125579383;78.0;-84.31347415896568;-0.30032837;-0.44999814
     actualName: Красные
   Синие:
-    isNewColor: false
-    color: BLUE
+    isNewColor: true
+    color: LIGHT_BLUE
     maxPlayers: 4
     bed: 2.0;77.0;74.0;0.0;0.0
     spawn: 2.449533174871481;78.0;85.0583388233543;-179.7004;-0.15003683
     actualName: Синие
 spawners:
-- maxSpawnedResources: -1
-  hologramEnabled: true
-  location: 3.437787910680546;77.5;-89.69999998807907;0.0;0.0
-  customName: null
-  startLevel: 1.0
-  team: null
-  type: gold
-- maxSpawnedResources: -1
-  hologramEnabled: true
-  location: 1.7147351804264308;77.5;-89.69999998807907;0.0;0.0
-  customName: null
-  startLevel: 1.0
-  team: null
-  type: iron
-- maxSpawnedResources: -1
+- maxSpawnedResources: 8
   hologramEnabled: true
   location: 1.300000011920929;77.5;90.69999998807907;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: gold
-- maxSpawnedResources: -1
+- maxSpawnedResources: 48
   hologramEnabled: true
   location: 3.699999988079071;77.5;90.69999998807907;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: iron
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: -69.48883142456222;79.0;0.4788482687227591;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: diamond
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: -24.493149059660873;82.0;0.4944699133456061;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: emerald
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: 21.38725985233655;69.0;0.5661751111683359;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: emerald
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: 70.44394561078984;74.0;0.48213643955017366;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: diamond
+- maxSpawnedResources: 100
+  hologramEnabled: true
+  location: 3.453603165064057;77.5;-89.69667457270371;0.0;0.0
+  customName: Золото
+  startLevel: 1.0
+  team: Синие
+  type: gold
+- maxSpawnedResources: 100
+  hologramEnabled: true
+  location: 1.5157274186221474;77.5;-89.6667458343255;0.0;0.0
+  customName: Золото
+  startLevel: 1.0
+  team: Синие
+  type: iron
+- maxSpawnedResources: 100
+  hologramEnabled: true
+  location: 3.502283116344983;77.5;90.4240380648238;0.0;0.0
+  customName: Золото
+  startLevel: 1.0
+  team: Красные
+  type: iron
+- maxSpawnedResources: 100
+  hologramEnabled: true
+  location: 1.5101335084513983;77.5;90.62646722204347;0.0;0.0
+  customName: Золото
+  startLevel: 1.0
+  team: Красные
+  type: gold
 stores:
 - isBaby: 'false'
   loc: -1.699999988079071;78.0;86.52479877675732;-90.750275;-0.45005447
@@ -91,10 +105,26 @@ stores:
   team: null
   type: VILLAGER
 - isBaby: 'false'
+  loc: -1.6983584273886343;78.0;-85.59755874906904;-89.24985;1.0500065
+  parent: 'false'
+  shop: upgradeShop.yml
+  name: §a§lУлучшения
+  skin: null
+  team: null
+  type: VILLAGER
+- isBaby: 'false'
   loc: 6.694169101986298;78.0;-85.51761903635648;90.29972;1.1999743
   parent: 'false'
   shop: shop.yml
   name: §a§lVillager_shop
+  skin: null
+  team: null
+  type: VILLAGER
+- isBaby: 'false'
+  loc: 6.699999988079071;78.0;86.61662352048212;90.44998;0.60000026
+  parent: 'false'
+  shop: upgradeShop.yml
+  name: §a§lУлучшения
   skin: null
   team: null
   type: VILLAGER

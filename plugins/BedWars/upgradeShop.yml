@@ -1,0 +1,132 @@
+data:
+  - stack: "IRON_CHESTPLATE;1;Защита;Командная защита брони (уровни I-IV)."
+    column: 2
+    price: 4 of diamond
+    properties: protection
+
+  - stack: "IRON_SWORD;1;Острота;Командная острота мечей (уровни I-IV)."
+    column: 1
+    price: 4 of diamond
+    properties: sharpness
+
+  - stack: "GOLDEN_PICKAXE;1;Эффективность;Командная эффективность кирки (уровни I-IV)."
+    price: 4 of diamond
+    column: 3
+    properties: efficiency
+
+  # ------ FORGE (простое и надёжное решение) ------
+  # Почему так:
+  # - SBA upgradeShop.yml НЕ поддерживает prerequisites (нельзя "запретить" Tier IV до Tier I).
+  # - Поэтому самое надёжное Hypixel-style поведение — 1 кнопка "Forge",
+  #   которая повышает уровень генераторов на +1 за покупку, пока не достигнут максимум.
+  #
+  # Настройка ниже делает:
+  # - +1 tier за покупку (add-levels: 1)
+  # - максимум: Tier 5 (max-level: 5), что соответствует 4 покупкам от старта Tier 1
+  # - улучшает только базовые генераторы команды (iron + gold)
+
+  - row: 1
+    column: 4
+    price: 2 of diamond
+    properties:
+      name: forge
+      add-levels: 1
+      max-level: 5
+      type:
+        - iron
+        - gold
+    stack:
+      type: FURNACE
+      amount: 1
+      display-name: "§cКузница (Forge)"
+      lore:
+        - "§7Улучшает генераторы базы:"
+        - "§fЖелезо §7и §6Золото"
+        - ""
+        - "§7Каждая покупка: §b+1 Tier"
+        - "§7Максимум: §bTier 5"
+        - "§7Цена: §b2 алмаза §7за уровень"
+
+  - stack: "BEACON;1;§bПул исцеления;§7Создаёт ауру исцеления на базе."
+    column: 5
+    row: 1
+    properties: healpool
+    price: 8 of diamond
+
+  - stack: "LEATHER;1;Ловушки;Защитите базу ловушками."
+    column: 7
+    items:
+      - price: 2 of diamond
+        skip: 1
+        properties: blindtrap
+        stack:
+          type: STRING
+          display-name: "§bЛовушка: Слепота"
+          lore:
+            - "§7Срабатывает при входе врага на базу."
+            - "§7Накладывает слепоту."
+
+      - price: 2 of diamond
+        skip: 1
+        properties: minertrap
+        stack:
+          type: STRING
+          display-name: "§bЛовушка: Усталость"
+          lore:
+            - "§7Срабатывает при входе врага на базу."
+            - "§7Замедляет добычу (Mining Fatigue)."
+
+      - price: 2 of diamond
+        skip: 1
+        properties:
+          name: trap
+          identifier: custom_trap_1
+          target: team
+          effects:
+            - type: jump_boost
+              duration: 600
+              level: 6
+            - type: regeneration
+              duration: 600
+              level: 2
+        stack:
+          type: STRING
+          display-name: "§bКастомная ловушка"
+          lore:
+            - "§7Даёт баффы вашей команде при входе врага на базу."
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 0
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 1
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 2
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 3
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 4
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 5
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 6
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 7
+
+  - stack: "GRAY_STAINED_GLASS_PANE;1;*****"
+    row: 2
+    column: 8

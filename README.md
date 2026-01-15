@@ -57,3 +57,8 @@ create_links.sh worlds.txt ./bedwars_worlds # <- типо передаём от�
 **ВАЖНО:** после создания арен / дополнительных миров, их нужно перенести в гитхаб:
 - `plugins/BedWars/arenas/*`
 - `plugins/Multiverse-Core/worlds.yml` 
+
+
+## Плагины (не в `plugins.txt`)
+- Vault
+- OldCombatMechanics

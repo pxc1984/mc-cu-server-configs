@@ -11,70 +11,70 @@ minPlayers: 2
 postGameWaiting: 3
 teams:
   Blue:
-    isNewColor: false
-    color: BLUE
+    isNewColor: true
+    color: LIGHT_BLUE
     maxPlayers: 4
     bed: 0.0;65.0;62.0;0.0;0.0
     spawn: 0.5677760838742186;64.0;73.49318321977854;179.8501;0.14996411
     actualName: Blue
   Red:
-    isNewColor: false
+    isNewColor: true
     color: RED
     maxPlayers: 4
     bed: 0.0;65.0;-63.0;0.0;0.0
     spawn: 0.40685800625937113;64.0;-72.67017198253134;-0.2996608;0.8999246
     actualName: Red
 spawners:
-- maxSpawnedResources: -1
+- maxSpawnedResources: 8
   hologramEnabled: true
   location: -0.4675257203518833;63.5;77.62342476166992;0.0;0.0
   customName: null
   startLevel: 1.0
   team: Blue
   type: gold
-- maxSpawnedResources: -1
+- maxSpawnedResources: 48
   hologramEnabled: true
   location: 1.6872884814707947;63.5;77.61825718784849;0.0;0.0
   customName: null
   startLevel: 1.0
   team: Blue
   type: iron
-- maxSpawnedResources: -1
+- maxSpawnedResources: 48
   hologramEnabled: true
   location: 1.490120091685187;63.5;-77.5324630335726;0.0;0.0
   customName: null
   startLevel: 1.0
   team: Red
   type: iron
-- maxSpawnedResources: -1
+- maxSpawnedResources: 8
   hologramEnabled: true
   location: -0.23287810085800476;63.5;-77.52224087461055;0.0;0.0
   customName: null
   startLevel: 1.0
   team: Red
   type: gold
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: 8.610435432589107;69.0;12.510139996566712;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: emerald
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: -6.477406206183911;69.0;-10.43666749577516;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: emerald
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: -47.557897662316535;64.0;-9.579191216171722;0.0;0.0
   customName: null
   startLevel: 1.0
   team: null
   type: diamond
-- maxSpawnedResources: -1
+- maxSpawnedResources: 4
   hologramEnabled: true
   location: 48.40819588108982;64.0;10.653074491375804;0.0;0.0
   customName: null
@@ -82,6 +82,22 @@ spawners:
   team: null
   type: diamond
 stores:
+- isBaby: 'false'
+  loc: -5.55852316428038;64.0;-75.0376412279484;-91.0499;-0.3000039
+  parent: 'false'
+  shop: upgradeShop.yml
+  name: §a§lУлучшения
+  skin: null
+  team: null
+  type: VILLAGER
+- isBaby: 'false'
+  loc: 6.489895237156023;64.0;74.9700194252056;90.44997;2.100013
+  parent: 'false'
+  shop: upgradeShop.yml
+  name: §a§lУлучшения
+  skin: null
+  team: null
+  type: VILLAGER
 - isBaby: 'false'
   loc: -5.447951514647209;64.0;74.87486786349814;-89.549774;0.2999664
   parent: 'false'
