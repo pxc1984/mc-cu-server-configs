@@ -20,3 +20,5 @@ https://cdn.modrinth.com/data/2qgyQbO1/versions/mLVD9CNS/EssentialsXChat-2.21.0.
 https://cdn.modrinth.com/data/gG7VFbG0/versions/BQc9Xm3K/TAB%20v5.4.0.jar
 
 https://cdn.modrinth.com/data/lJPKRQLl/versions/nyUYcJ8o/SBA-1.5.18-all.jar
+
+https://cdn.modrinth.com/data/LTNsiZoj/versions/iMOhKlHi/TelegramChat_PDev-1.0.jar
