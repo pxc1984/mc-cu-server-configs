@@ -1,30 +1,34 @@
 https://cdn.modrinth.com/data/3IEZ9vol/versions/oezVemzR/AuthMe-5.7.0-FORK-Universal.jar
-https://cdn.modrinth.com/data/8sg1aj4I/versions/CK1V6HTE/BedWars-0.2.42.1.jar
-https://cdn.modrinth.com/data/hXiIvTyT/versions/SKQwLLoQ/EssentialsX-2.21.0.jar
-https://cdn.modrinth.com/data/g8Zwnnmn/versions/wNFGe3C9/ExecutableItems-7.25.12.24.jar
-https://cdn.modrinth.com/data/Vebnzrzj/versions/OrIs0S6b/LuckPerms-Bukkit-5.5.17.jar
-https://cdn.modrinth.com/data/ZfcV7L06/versions/ElVp1U5H/SCore-5.25.12.24.jar
-https://cdn.modrinth.com/data/TsLS8Py5/versions/gtqGepWi/SkinsRestorer.jar
-https://cdn.modrinth.com/data/3wmN97b8/versions/fw2C2Wui/multiverse-core-5.4.0.jar
-https://cdn.modrinth.com/data/9eGKb6K1/versions/gKg6nA1q/voicechat-bukkit-2.6.7.jar
-https://cdn.modrinth.com/data/1u6JkXh5/versions/XlUIRmF8/worldedit-bukkit-7.3.18.jar
 
-https://cdn.modrinth.com/data/Lu3KuzdV/versions/HD2IvrxS/CoreProtect-CE-23.1.jar
-https://cdn.modrinth.com/data/otHQ7zw3/versions/DNTeer1K/xrayguard-1.1.0.jar
+# EssentialsX 1.21.11
+# EssentialsXChat 1.21.11
 
-https://cdn.modrinth.com/data/DKY9btbd/versions/f9NoeotB/worldguard-bukkit-7.0.13-dist.jar
+https://cdn.modrinth.com/data/g8Zwnnmn/versions/j5FY3aFT/ExecutableItems-7.26.1.25.jar
+# LuckPerms 1.21.11
+
+https://cdn.modrinth.com/data/ZfcV7L06/versions/h6FuHZkW/SCore-5.26.1.25.jar
+https://cdn.modrinth.com/data/8sg1aj4I/versions/Q0Lo5bzR/BedWars-0.2.42.2.jar
+
+https://cdn.modrinth.com/data/TsLS8Py5/versions/4RLZs1em/SkinsRestorer.jar
+https://cdn.modrinth.com/data/3wmN97b8/versions/SDn3Tk8U/multiverse-core-5.5.0.jar
+https://cdn.modrinth.com/data/8VMk6P0I/versions/E3ORL9Su/multiverse-portals-5.2.0.jar
+https://cdn.modrinth.com/data/9eGKb6K1/versions/d5f6AAog/voicechat-bukkit-2.6.11.jar
+https://cdn.modrinth.com/data/1u6JkXh5/versions/CkT32vix/worldedit-bukkit-7.4.0.jar
+
+# CoreProtect 1.21.11
+# Убрал xrayguard
+
+https://cdn.modrinth.com/data/DKY9btbd/versions/WaElxvDz/worldguard-bukkit-7.0.15.jar
 https://cdn.modrinth.com/data/FXR5nhTz/versions/LZxhu1uM/autosort-0.1.12%2B1.21.11-paper.jar
 https://cdn.modrinth.com/data/lJFOpcEj/versions/Wn6cnDkq/ImageFrame-1.9.0.0.jar
 https://cdn.modrinth.com/data/JOwrpZ7P/versions/6flJlSqM/playersit-1.0.0.jar
-https://cdn.modrinth.com/data/2qgyQbO1/versions/mLVD9CNS/EssentialsXChat-2.21.0.jar
-https://cdn.modrinth.com/data/gG7VFbG0/versions/BQc9Xm3K/TAB%20v5.4.0.jar
+https://cdn.modrinth.com/data/gG7VFbG0/versions/ytrzzJbN/TAB%20v5.5.0.jar
 
-https://cdn.modrinth.com/data/lJPKRQLl/versions/nyUYcJ8o/SBA-1.5.18-all.jar
-
-https://cdn.modrinth.com/data/LTNsiZoj/versions/iMOhKlHi/TelegramChat_PDev-1.0.jar
+# SBA 1.21.11 (ScreamingBedwarsAddon)
+# TelegramChat_PDev 1.21.11
 
 https://cdn.modrinth.com/data/ayRaM8J7/versions/zoSnz1nu/VaultUnlocked-2.18.0.jar
-https://cdn.modrinth.com/data/VOlwRsK4/versions/IaSnG3xO/EasyShopGUI-1.5.0.jar
-https://cdn.modrinth.com/data/QufNAmjx/versions/qVFpHDlC/ExcellentEnchants-5.3.0.jar
+https://cdn.modrinth.com/data/TdefKtjL/versions/iZVIXY6R/ExcellentCrates-6.6.1.jar
+# ExcellentEnchants 1.21.11
+
 https://cdn.modrinth.com/data/Y4NRwMW5/versions/ZIVix7of/nightcore-2.13.1.jar
-https://cdn.modrinth.com/data/8VMk6P0I/versions/E3ORL9Su/multiverse-portals-5.2.0.jar
