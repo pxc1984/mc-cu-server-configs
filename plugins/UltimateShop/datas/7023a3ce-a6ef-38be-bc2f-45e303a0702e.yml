@@ -1,0 +1,58 @@
+useTimes:
+  special:
+    E: {}
+    D:
+      buyUseTimes: 2
+      lastBuyTime: '2026-01-26 19:03:01'
+    I:
+      buyUseTimes: 3
+      lastBuyTime: '2026-01-26 18:58:50'
+    H: {}
+    F: {}
+    A:
+      buyUseTimes: 1
+      lastBuyTime: '2026-01-26 19:24:43'
+    C: {}
+    G:
+      buyUseTimes: 1
+      lastBuyTime: '2026-01-26 19:11:46'
+    B: {}
+  terracottas:
+    G: {}
+    F: {}
+    A: {}
+    O: {}
+    J: {}
+    N: {}
+    B: {}
+    C: {}
+    H: {}
+    I: {}
+    E: {}
+    K: {}
+    P: {}
+    L: {}
+    M: {}
+    D: {}
+  fish:
+    F: {}
+    C: {}
+    A: {}
+    E: {}
+    B: {}
+    D: {}
+  minerals:
+    E: {}
+    D: {}
+    B: {}
+    A: {}
+    I: {}
+    J: {}
+    C: {}
+    H: {}
+    F: {}
+    G: {}
+  sell:
+    A:
+      sellUseTimes: 1
+      lastSellTime: '2026-01-26 19:07:20'

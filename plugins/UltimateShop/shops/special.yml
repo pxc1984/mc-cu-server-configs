@@ -1,0 +1,163 @@
+settings:
+  menu: 'example-shop-menu'
+  buy-more: true
+  shop-name: '&b&lКастомные зачарования'
+  hide-message: false
+  secret-shop-items: true
+
+items:
+  # ===== Кирки: AutoSmelt I =====
+  A:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: STONE_PICKAXE
+        amount: 1
+        name: '&fКаменная кирка &7(AutoSmelt I)'
+        enchants:
+          "superenchants:autosmelt": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '500'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  B:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: IRON_PICKAXE
+        amount: 1
+        name: '&fЖелезная кирка &7(AutoSmelt I)'
+        enchants:
+          "superenchants:autosmelt": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '1000'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  C:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&bАлмазная кирка &7(AutoSmelt I)'
+        enchants:
+          "superenchants:autosmelt": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '1500'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  # ===== Кирки: Excavator I =====
+  D:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: STONE_PICKAXE
+        amount: 1
+        name: '&fКаменная кирка &7(Excavator I)'
+        enchants:
+          "superenchants:excavator": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '200'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  E:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: IRON_PICKAXE
+        amount: 1
+        name: '&fЖелезная кирка &7(Excavator I)'
+        enchants:
+          "superenchants:excavator": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '500'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  F:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: DIAMOND_PICKAXE
+        amount: 1
+        name: '&bАлмазная кирка &7(Excavator I)'
+        enchants:
+          "superenchants:excavator": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '1000'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  # ===== Мечи: Lightning I =====
+  G:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: STONE_SWORD
+        amount: 1
+        name: '&fКаменный меч &7(Lightning I)'
+        enchants:
+          "superenchants:lightning": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '200'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  H:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: IRON_SWORD
+        amount: 1
+        name: '&fЖелезный меч &7(Lightning I)'
+        enchants:
+          "superenchants:lightning": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '500'
+        placeholder: '{amount}$'
+        start-apply: 0
+
+  I:
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: DIAMOND_SWORD
+        amount: 1
+        name: '&bАлмазный меч &7(Lightning I)'
+        enchants:
+          "superenchants:lightning": 1
+    buy-prices:
+      1:
+        economy-plugin: Vault
+        amount: '1000'
+        placeholder: '{amount}$'
+        start-apply: 0

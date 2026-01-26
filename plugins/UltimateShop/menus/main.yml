@@ -1,0 +1,51 @@
+title: '{lang:shop-title}'
+size: 54
+
+bedrock:
+  enabled: true
+  content: '{lang:welcome-message}'
+
+open-actions:
+  1:
+    type: sound
+    sound: block.note_block.pling
+    open-once: true
+
+layout:
+  - '000000000'
+  - '0000A0000'
+  - '0000B0000'
+  - '000000000'
+  - '000000000'
+  - '0000Z0000'
+
+buttons:
+  A:
+    display-item:
+      material: NETHERITE_INGOT
+      name: '&6&lПродажа'
+      lore:
+        - '&7Только продажа предметов'
+        - '&7(пока что 1 позиция)'
+    actions:
+      1:
+        type: shop_menu
+        shop: sell
+  B:
+    display-item:
+      material: DIAMOND_PICKAXE
+      name: '&b&lКастомные зачарования'
+      lore:
+        - '&7Покупка кастомных кирок и мечей'
+        - '&7SuperEnchants'
+    actions:
+      1:
+        type: shop_menu
+        shop: special
+  Z:
+    display-item:
+      material: BARRIER
+      name: '{lang:close-button}'
+    actions:
+      1:
+        type: close

@@ -1,0 +1,15 @@
+useTimes:
+  special:
+    E: {}
+    D: {}
+    G: {}
+    H: {}
+    F: {}
+    A: {}
+    B: {}
+    C: {}
+    I: {}
+  sell:
+    A:
+      sellUseTimes: 5
+      lastSellTime: '2026-01-26 21:19:19'

@@ -1,0 +1,261 @@
+error:
+  product-not-found: "&#98FB98[UltimateShop] &cNão foi possível encontrar o produto {product}!"
+  shop-not-found: "&#98FB98[UltimateShop] &cNão foi possível encontrar a loja {shop}!"
+  player-not-found: "&#98FB98[UltimateShop] &cNão conseguimos encontrar o jogador {player}!"
+  item-not-found: "&#98FB98[UltimateShop] &cNão conseguimos encontrar o item {item}!"
+  args: "&#98FB98[UltimateShop] &cUso de comando incorreto. Se precisar de ajuda, use /shop help!"
+  in-game: "&#98FB98[UltimateShop] &cVocê precisa usar este comando dentro do jogo!"
+  miss-permission: "&#98FB98[UltimateShop] &cVocê não tem permissão para usar este comando!"
+  menu-not-found: "&#98FB98[UltimateShop] &cNão conseguimos encontrar o menu: {menu}!"
+  buy-more-menu-direct-open: "&#98FB98[UltimateShop] &cEste menu é de compra adicional e não pode ser aberto diretamente!"
+  shop-menu-not-found: "&#98FB98[UltimateShop] &cNão conseguimos encontrar o menu {menu} da loja {shop}!"
+  shop-does-not-have-menu: "&#98FB98[UltimateShop] &cA loja {shop} não possui um menu válido!"
+  random-placeholder-not-found: "&#98FB98[UltimateShop] &cNão conseguimos encontrar o placeholder aleatório: {placeholder}!"
+
+plugin:
+  reloading: "&#98FB98[UltimateShop] &fTentando recarregar o plugin. O servidor pode apresentar queda no TPS ou até mesmo travar se você tiver muitos produtos na loja e jogadores online, pois estamos tentando salvar os dados na thread principal do servidor. Recomendamos reiniciar o servidor em vez de recarregar o plugin para manter os dados seguros."
+  reloaded: "&#98FB98[UltimateShop] &fPlugin recarregado!"
+  reload-close-gui: "&#98FB98[UltimateShop] &fSua GUI foi fechada porque o administrador do servidor está tentando recarregar o plugin!"
+  saved: "&#98FB98[UltimateShop] &fItem salvo!"
+  generated: "&#98FB98[UltimateShop] &fFormato do item segurado gerado na pasta de configuração do plugin. Por favor, copie para os seus arquivos de menu ou configurações da loja!"
+
+placeholderapi:
+  unknown-shop: "Loja desconhecida"
+  unknown-product: "Produto desconhecido"
+
+command-tab:
+  unknown-shop: "[Loja Desconhecida]"
+  unknown-random-placeholder: "[Placeholder Aleatório Desconhecido]"
+  type-item-id: "[Digite o ID do item desejado]"
+
+# Todas as mensagens também suportam várias linhas, é só fazer assim!
+help:
+  main: |
+    &#98FB98&lUltimateShop &7Criado por @PQguanfang
+    &f/shop help &7- Exibe a ajuda.
+    &f/shop menu <menuName> &7- Abre um menu comum especificado.
+    &f/shop menu <shopName> &7- Abre o menu de uma loja especificada.
+    &f/shop sellall &7- Abre o menu de vender tudo.
+  main-admin: |
+    &#98FB98&lUltimateShop &7Criado por @PQguanfang
+    &f/shop help &7- Exibe a ajuda.
+    &f/shop menu <menuName> &7- Abre um menu comum especificado.
+    &f/shop menu <shopName> &7- Abre o menu de uma loja especificada.
+    &f/shop quickbuy <shopName> <itemName> &7- Compra rápida de um item especificado sem abrir o menu.
+    &f/shop quicksell <shopName> <itemName> &7- Venda rápida de um item especificado sem abrir o menu.
+    &f/shop reload &7- Recarrega o plugin.
+    &f/shop sellall &7 - Abre o menu de vender tudo.
+    &f/shop setbuytimes <shopName> <itemName> <playerName> [amount] &7- Define o número de compras.
+    &f/shop setselltimes <shopName> <itemName> <playerName> [amount] &7- Define o número de vendas.
+    &f/shop addbuytimes <shopName> <itemName> <playerName> <amount> &7- Adiciona ao número de compras.
+    &f/shop addselltimes <shopName> <itemName> <playerName> <amount> &7- Adiciona ao número de vendas.
+    &f/shop resetrandomplaceholder <placeholderID> &7- Redefine o valor do placeholder aleatório. &c(Premium)
+    &f/shop setrandomplaceholder <placeholderID> [element] &7- Define o valor do placeholder aleatório. &c(Premium)
+    &f/shop getplaceholdervalue <text> &7- Interpreta o texto inserido. &c(Premium)
+    &f/shop saveitem <itemID> &7- Salva o item segurado.
+    &f/shop generateitemformat &7- Interpreta o item segurado em formato de item.
+    &f/shop givesellstick <itemID> <playerID> [amount] &7- Dá o item de "vara de venda". &c(Premium)
+  main-console: |
+    &#98FB98&lUltimateShop &7Criado por @PQguanfang
+    &f/shop help &7- Exibe a ajuda.
+    &f/shop menu <menuName> <playerName> &7- Força a abertura de um menu comum especificado.
+    &f/shop menu <shopName> <playerName> &7- Força a abertura do menu de uma loja especificada.
+    &f/shop reload &7- Recarrega o plugin.
+    &f/shop setbuytimes <shopName> <itemName> <playerName> [amount] &7- Define o número de compras.
+    &f/shop setselltimes <shopName> <itemName> <playerName> [amount] &7- Define o número de vendas.
+    &f/shop addbuytimes <shopName> <itemName> <playerName> <amount> &7- Adiciona ao número de compras.
+    &f/shop addselltimes <shopName> <itemName> <playerName> <amount> &7- Adiciona ao número de vendas.
+    &f/shop resetrandomplaceholder <placeholderID> &7- Redefine o valor do placeholder aleatório. &c(Premium)
+    &f/shop setrandomplaceholder <placeholderID> [element] &7- Define o valor do placeholder aleatório. &c(Premium)
+    &f/shop getplaceholdervalue <text> &7- Interpreta o texto inserido. &c(Premium)
+    &f/shop givesellstick <itemID> <playerID> [amount] &7- Dá o item de "vara de venda". &c(Premium)
+
+inventory-full: "&#98FB98[UltimateShop] &fVocê não pode concluir esta transação porque seu inventário ficará cheio após a transação!"
+start-sell-all: "&#98FB98[UltimateShop] &fTodos os seus {amount}x itens vendáveis foram vendidos, você ganhou {reward} por isso!"
+start-sell-stick: "&#98FB98[UltimateShop] &fTodos os seus itens vendáveis neste contêiner foram vendidos, você ganhou {reward} por isso!"
+give-sell-stick: "&#98FB98[UltimateShop] &fVocê deu ao jogador {player} um bastão de venda {item} x{amount}!"
+add-times: "&#98FB98[UltimateShop] &fAdicionou {times} aos tempos de uso do item {item} do jogador {player}!"
+set-times: "&#98FB98[UltimateShop] &fDefiniu os tempos de uso do item {item} do jogador {player} para {times}!"
+add-times-shop: "&#98FB98[UltimateShop] &fAdicionou {times} aos tempos de uso de todos os produtos da loja {shop} do jogador {player}!"
+set-times-shop: "&#98FB98[UltimateShop] &fDefiniu os tempos de uso de todos os produtos da loja {shop} do jogador {player} para {times}!"
+success-buy: "&#98FB98[UltimateShop] &fVocê comprou com sucesso {item}x{amount}, custou {price}!"
+success-sell: "&#98FB98[UltimateShop] &fVocê vendeu com sucesso {item}x{amount}, ganhou {price}!"
+menu-condition-not-meet: "&#98FB98[UltimateShop] &cVocê não atendeu às condições necessárias para abrir este menu!"
+buy-condition-not-meet: "&#98FB98[UltimateShop] &cVocê não atendeu às condições necessárias para comprar este produto!"
+sell-condition-not-meet: "&#98FB98[UltimateShop] &cVocê não atendeu às condições necessárias para vender este produto!"
+limit-reached-buy-player: "&#98FB98[UltimateShop] &cVocê não pode mais comprar o item {item}. Você comprou este item {times} vezes hoje, e seu estoque diário é {limit} para você. Próximo horário de atualização: {refresh}."
+limit-reached-sell-player: "&#98FB98[UltimateShop] &cVocê não pode mais vender o item {item}. Você vendeu este item {times} vezes hoje, e seu estoque diário é {limit} para você. Próximo horário de atualização: {refresh}."
+limit-reached-buy-server: "&#98FB98[UltimateShop] &cVocê não pode mais comprar o item {item}. Todos os jogadores compraram este item {times} vezes hoje, e o estoque diário é {limit}. Próximo horário de atualização: {refresh}."
+limit-reached-sell-server: "&#98FB98[UltimateShop] &cVocê não pode mais vender o item {item}. Todos os jogadores venderam este item {times} vezes hoje, e o estoque diário é {limit}. Próximo horário de atualização: {refresh}."
+buy-price-not-enough: "&#98FB98[UltimateShop] &cVocê não tem dinheiro suficiente para comprar {item}. Preço necessário: {price}."
+sell-products-not-enough: "&#98FB98[UltimateShop] &cVocê não tem {item} suficiente para vender."
+parsed-value: "&#98FB98[UltimateShop] &fValor interpretado: {text}"
+reset-random-placeholder: "&#98FB98[UltimateShop] &fPlaceholder aleatório {placeholder} redefinido com sucesso. O novo valor é {value}."
+set-random-placeholder: "&#98FB98[UltimateShop] &fPlaceholder aleatório {placeholder} definido com sucesso. Novo valor: {value}. Observe que o tempo de atualização não foi redefinido!"
+gui-updated: "&#98FB98[UltimateShop] &fGUI updated for player {player}!"
+gui-not-opened: "&#98FB98[UltimateShop] &c{player} didn't open any GUI!"
+
+override-lang:
+  shop-title: 'Item Shop'
+  buy-more-title: 'Select Quantity'
+  buy-more-add-1: '&7Click to add 1 more.'
+  buy-more-add-10: '&7Click to add 10 more.'
+  buy-more-add-32: '&7Click to add 32 more.'
+  buy-more-reduce-1: '&7Click to reduce 1.'
+  buy-more-reduce-10: '&7Click to reduce 10.'
+  buy-more-reduce-32: '&7Click to reduce 32.'
+  buy-more-buy-button: '&a&lCLICK TO BUY'
+  buy-more-sell-button: '&c&lCLICK TO SELL'
+  buy-more-buy-button-lore-1: '&aClick to confirm and purchase'
+  buy-more-buy-button-lore-2: '&athe quantity you have selected.'
+  buy-more-sell-button-lore-1: '&cClick to confirm and sell'
+  buy-more-sell-button-lore-2: '&cthe quantity you have selected.'
+  back-button: '&c« Go back'
+  close-button: '&cClose this menu'
+  next-page-button: '&cNext page »'
+  previous-page-button: '&c« Previous page'
+  welcome-message: '&fWelcome to shop.'
+  farming-name: '&a&lFARMING'
+  farming-lore-1: '&7Sell and buy various items'
+  farming-lore-2: '&7such as seeds.'
+  drops-name: '&b&lDROPS'
+  drops-lore-1: '&7Sell and buy related items'
+  drops-lore-2: '&7to mob drops as strings.'
+  concretes-name: '&a&lCONCRETES'
+  concretes-lore-1: '&7Sell and buy blocks of concrete'
+  concretes-lore-2: '&7and all their color variants.'
+  flowers-name: '&a&lFLOWERS'
+  flowers-lore-1: '&7Sell and buy many types of'
+  flowers-lore-2: '&7flowers in this section.'
+  logs-name: '&a&lLOGS AND SAPLING'
+  logs-lore-1: '&7Sell and buy all variants of overworld'
+  logs-lore-2: '&7logs and their saplings.'
+  minerals-name: '&a&lMINERALS'
+  minerals-lore-1: '&7Sell and buy different minerals'
+  minerals-lore-2: '&7such as diamond, iron and more.'
+  blocks-name: '&a&lBLOCKS'
+  blocks-lore-1: '&7Sell and buy different types'
+  blocks-lore-2: '&7of varied blocks.'
+  terracotta-name: '&a&lTERRACOTTA'
+  terracotta-lore-1: '&7Sell and buy blocks of terracotta'
+  terracotta-lore-2: '&7and all their color variants.'
+  glass-name: '&7&lGLASS'
+  glass-lore-1: '&7Sell and buy blocks of glass and panels'
+  glass-lore-2: '&7and all their color variants.'
+  wool-name: '&a&lWOOL'
+  wool-lore-1: '&7Sell and buy blocks of wools'
+  wool-lore-2: '&7and all their color variants.'
+  special-items-name: '&d&lSPECIAL ITEMS'
+  special-items-lore-1: '&7Sell and buy some special'
+  special-items-lore-2: '&7or rare items.'
+  redstone-name: '&c&lREDSTONE'
+  redstone-lore-1: '&7Sell and buy everything related'
+  redstone-lore-2: '&7to redstone as comparators.'
+  fish-name: '&9&lFISH SHOP'
+  fish-lore-1: '&7Sell or buy different raw'
+  fish-lore-2: '&7or cooked fish.'
+  transports-name: '&a&lTRANSPORTS'
+  transports-lore-1: '&7Some things related to'
+  transports-lore-2: '&7transport like rails.'
+  blocks-shop-name: 'Blocks Shop'
+  concretes-shop-name: 'Concrete Shop'
+  drops-shop-name: 'Drops Shop'
+  farming-shop-name: 'Farming Shop'
+  fish-shop-name: 'Fish Shop'
+  flowers-shop-name: 'Flowers Shop'
+  glass-shop-name: 'Glass Shop'
+  logs-shop-name: 'Logs Shop'
+  minerals-shop-name: 'Minerals Shop'
+  redstone-shop-name: 'Redstone Shop'
+  special-items-shop-name: 'Special Items Shop'
+  terracotta-shop-name: 'Terracotta Shop'
+  wools-shop-name: 'Wools Shop'
+  daily-shop-name: 'Daily Shop (Require PREMIUM)'
+  menu:
+    sell-all:
+      title: '&fSell All &7- Esc to confirm sell!'
+    bedrock:
+      price-extra-line:
+        default: '&6Buy: {buy-price} &6| Sell: {sell-price}'
+        only-buy: '&6Buy: {buy-price}'
+        only-sell: '&6Sell: {sell-price}'
+      buy-or-sell:
+        title: 'Select Amount: {item-name}'
+        buttons:
+          amount:
+            name: 'Amount'
+            tip: 'Type amount here!'
+      info:
+        title: 'Product Info: {item-name} x{amount}'
+        buttons:
+          buy: 'Buy'
+          sell: 'Sell'
+          buy-more: 'Select Amount'
+          sell-all: 'Sell All'
+          back: '&cBack'
+  placeholder:
+    compare:
+      up: '↑'
+      down: '↓'
+      same: '-'
+    cron:
+      format: "yyyy-MM-dd HH:mm:ss"
+    refresh:
+      format: "yyyy-MM-dd HH:mm:ss"
+      never: "Never"
+    next:
+      with-day-format: "{d}d {h}h {m}m {s}s"
+      without-day-format: "{h}h {m}m {s}s"
+      never: "Waiting for next refresh"
+    price:
+      split-symbol-any: ', '
+      split-symbol-all: ', '
+      replace-new-line-symbol: ', '
+      unknown: "Unknown"
+      unknown-price-type: "Unknown Price Type"
+      empty: "Price is empty!"
+    click:
+      buy: '&#FFFACDLeft-click to buy!'
+      sell: '&#FFFACDRight-click to sell!'
+      buy-with-no-sell: '&#FFFACDClick to buy!'
+      sell-with-no-buy: '&#FFFACDClick to sell!'
+      buy-max-limit-player: '&#ff3300You can not buy more!'
+      buy-max-limit-server: '&#ff3300SOLD OUT!'
+      sell-max-limit-player: '&#ff3300Can not sell more!'
+      sell-max-limit-server: '&#ff3300THIS ITEM CAN NOT BE SOLD!'
+      buy-price-not-enough: '&#ff3300Do not have enough money to buy!'
+      sell-price-not-enough: '&#ff3300Do not have enough item to sell!'
+      error: '&#ff3300Error!'
+      buy-condition-not-meet: '&#ff3300Not meet the buy condition!'
+      sell-condition-not-meet: '&#ff3300Not meet the sell condition!'
+    sell-stick:
+      infinite: "&cInfinite"
+  display-item:
+    add-lore:
+      - '@n '
+      - '@a&ePurchase: {buy-price}'
+      - '@b&eSell: {sell-price}'
+      - '@c&#FF7777Player Buy Stock: {buy-times-player}/{buy-limit-player}'
+      - '@d&#FF7777Server Buy Stock: {buy-times-server}/{buy-limit-server}'
+      - '@e&#FF7777Player Sell Limit: {sell-times-player}/{sell-limit-player}'
+      - '@f&#FF7777Server Sell Limit: {sell-times-server}/{sell-limit-server}'
+      - '@g '
+      - '@g&#ff3300cCan not buy more!'
+      - '@g&8Refresh Time: {buy-refresh-player}'
+      - '@i '
+      - '@i&#ff3300Sold Out!'
+      - '@i&8Refresh Time: {buy-refresh-server}'
+      - '@h '
+      - '@h&#ff3300Can not sell more!'
+      - '@h&8Refresh Time: {sell-refresh-player}'
+      - '@j'
+      - '@j&#ff3300Can not sell more for server!'
+      - '@j&8Refresh Time: {sell-refresh-server}'
+      - '@n '
+      - '@a@u@y{buy-click}'
+      - '@b@v@y{sell-click}'
+      - '@k@q@y&#FFFACDRight-Shift click to pick amount!'
+      - '@m@v@y&#FFFACDDrop (Q key) to sell all!'
+      - '(@n)&c&l:( Can not do this'
+      - '(@a)@u@p&cThis item can not be purchased'
+      - '(@b)@v@p&cThis item can not be sold'

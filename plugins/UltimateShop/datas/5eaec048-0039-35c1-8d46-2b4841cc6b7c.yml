@@ -1,0 +1,13 @@
+useTimes:
+  special:
+    E: {}
+    D: {}
+    G: {}
+    H: {}
+    F: {}
+    A: {}
+    B: {}
+    C: {}
+    I: {}
+  sell:
+    A: {}

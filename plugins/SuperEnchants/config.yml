@@ -1,0 +1,44 @@
+language: "en" #Language file to use, available languages: en, de, pt, es, fr, nl, ru, cn, pirate
+
+lightning-cooldown: 5 # In Seconds
+teleport-cooldown: 5 # In Seconds
+shockwave-cooldown: 5 # In Seconds
+inflame-cooldown: 5 # In Seconds
+dash-cooldown: 3 # In Seconds
+hook-cooldown: 0 # In Seconds
+gravity-cooldown: 5 # In Seconds
+
+structure_items: false #Set to false if you do not want custom enchantment books to appear in structures
+structure_item_chance: 0.1 #Chance of a custom enchantment book appearing in a structure, 0-1, 0.0 = 0%, 1.0 = 100%
+
+villager_trades: false #Set to false if you do not want custom enchantment books to appear in villager trades
+villager_trade_chance: 0.1 #Chance of a custom enchantment book appearing in a villager trade, 0-1, 0.0 = 0%, 1.0 = 100%, gets triggered every time a villager gains a new trade
+villager_trade_uses: 2 #Amount of times a villager trade can be used before it is locked for a while
+villager_types: #List of villager types to add custom enchantment books to
+
+blindness-duration: 100 # In ticks, gets multiplied by enchant level
+bleed-amount: 5 # Amount of times to deduct health
+bleed-interval: 20 # Amount of ticks in between each bleed
+bleed-health: 1 # Amount of health points to deduct, this would deduct 0.5 hearts, gets multiplied by enchant level
+freeze-duration: 100 # In Ticks
+confusion-duration: 120 # In Ticks
+healthsteal-amount: 0.2 # Set this to a decimal value, example 0.35 would give 35% of the targets health to the attacker, gets multiplied by enchant level
+dash-amount: 1.5 # Amount to multiply the players velocity by, gets multiplied by enchant level
+shockwave-range: 7 # In Blocks, gets changed by enchant level
+jetpack-acceleration: 0.1 # Acceleration of jetpack in blocks per tick (1/20th of a second), gets capped at jetpack-velo-limit
+jetpack-velo-limit: 0.45 # Amount of blocks per tick (1/20th of a second)
+detonate-power: 1 # Amount of explosion power for detonate, multiplied by enchant level
+timber-cap: 128 # Maximum amount of blocks to break with timber, set to 0 to disable
+
+explosive:
+  radius-per-level: 3.0 # radius = level * this
+  base-damage-per-level: 4.0 # base (max, at distance 0) damage before armor
+  min-damage-fraction: 0.15 # never go below this * baseDamage (0.0 = allow zero)
+  falloff: QUADRATIC # LINEAR or QUADRATIC falloff of damage with distance
+  affect-players: true
+  affect-mobs: true
+  sound: ENTITY_GENERIC_EXPLODE
+  particle: EXPLOSION_LARGE # Set to NONE to disable particles
+  cooldown-seconds: 3
+
+display-welcome-message: true

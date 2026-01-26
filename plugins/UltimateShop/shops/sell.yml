@@ -1,0 +1,28 @@
+settings:
+  menu: 'example-shop-menu'
+  buy-more: true
+  shop-name: '&6&lПродажа'
+  hide-message: false
+  secret-shop-items: true
+
+items:
+  A:
+    display-item:
+      material: NETHERITE_INGOT
+      amount: 1
+      name: '&8Незеритовый слиток'
+      lore:
+        - '&7Продажа: &a50$'
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: NETHERITE_INGOT
+        amount: 1
+    # Only sell (player sells item to shop)
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '50'
+        placeholder: '{amount}$'
+        start-apply: 0
