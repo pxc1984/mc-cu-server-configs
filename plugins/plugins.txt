@@ -24,7 +24,10 @@ https://cdn.modrinth.com/data/lJPKRQLl/versions/nyUYcJ8o/SBA-1.5.18-all.jar
 https://cdn.modrinth.com/data/LTNsiZoj/versions/iMOhKlHi/TelegramChat_PDev-1.0.jar
 
 https://cdn.modrinth.com/data/ayRaM8J7/versions/zoSnz1nu/VaultUnlocked-2.18.0.jar
-https://cdn.modrinth.com/data/VOlwRsK4/versions/IaSnG3xO/EasyShopGUI-1.5.0.jar
 https://cdn.modrinth.com/data/QufNAmjx/versions/qVFpHDlC/ExcellentEnchants-5.3.0.jar
 https://cdn.modrinth.com/data/Y4NRwMW5/versions/ZIVix7of/nightcore-2.13.1.jar
 https://cdn.modrinth.com/data/8VMk6P0I/versions/E3ORL9Su/multiverse-portals-5.2.0.jar
+
+# Added Shop and Enchants
+https://cdn.modrinth.com/data/npfwqUFV/versions/ILJz18ip/SuperEnchants-3.2.0.1-all.jar
+https://cdn.modrinth.com/data/mIaP5HAP/versions/Lh9TONZE/UltimateShop-4.2.3.jar
