@@ -15,7 +15,7 @@ Chalk_Cliffs:
     amount: 0.0
     currency: '@vault-economy'
   environment: normal
-  gamemode: survival
+  gamemode: adventure
   generator: ''
   hidden: false
   hunger: true
@@ -93,7 +93,7 @@ Cryptic:
     amount: 0.0
     currency: '@vault-economy'
   environment: normal
-  gamemode: survival
+  gamemode: adventure
   generator: ''
   hidden: false
   hunger: true
@@ -249,7 +249,7 @@ Picnic:
     amount: 0.0
     currency: '@vault-economy'
   environment: normal
-  gamemode: survival
+  gamemode: adventure
   generator: ''
   hidden: false
   hunger: true
@@ -327,7 +327,7 @@ RealWar:
     amount: 0.0
     currency: '@vault-economy'
   environment: normal
-  gamemode: survival
+  gamemode: adventure
   generator: ''
   hidden: false
   hunger: true
@@ -405,7 +405,7 @@ Ruins:
     amount: 0.0
     currency: '@vault-economy'
   environment: normal
-  gamemode: survival
+  gamemode: adventure
   generator: ''
   hidden: false
   hunger: true
@@ -483,7 +483,7 @@ amazon:
     amount: 0.0
     currency: '@vault-economy'
   environment: normal
-  gamemode: survival
+  gamemode: adventure
   generator: ''
   hidden: false
   hunger: true
@@ -800,6 +800,7 @@ world:
   hidden: false
   hunger: true
   keep-spawn-in-memory: true
+  skip-tripwire-hook-placement-validation: true
   player-limit: -1
   portal-form: all
   pvp: true

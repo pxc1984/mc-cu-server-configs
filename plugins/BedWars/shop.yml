@@ -115,9 +115,6 @@ data:
           enchants:
             knockback: 1
         price: 5 gold
-      - stack:
-          type: shield
-        price: 10 gold
 
 
   # ИНСТРУМЕНТЫ

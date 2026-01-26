@@ -17,7 +17,7 @@ spawner-disable-merge: true
 prevent-lobby-spawn-mobs-in-radius: 16
 spawner-holo-height: 0.25
 spawner-holograms-countdown: true
-damage-when-player-is-not-in-arena: false
+damage-when-player-is-not-in-arena: true
 remove-unused-target-blocks: true
 allow-block-falling: true
 game-start-items: true
@@ -433,8 +433,8 @@ target-block:
     destroy-by-eating: true
 event-hacks:
   damage: false
-  destroy: false
-  place: false
+  destroy: true
+  place: true
 tab:
   enable: false
   header:
@@ -452,12 +452,12 @@ tab:
   hide-spectators: true
   hide-foreign-players: false
 default-permissions:
-  join: true
-  leave: true
+  join: false
+  leave: false
   stats: true
   list: true
-  rejoin: true
-  autojoin: true
+  rejoin: false
+  autojoin: false
   leaderboard: true
   party: true
 party:
