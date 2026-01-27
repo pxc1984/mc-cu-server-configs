@@ -32,3 +32,4 @@ https://cdn.modrinth.com/data/8VMk6P0I/versions/E3ORL9Su/multiverse-portals-5.2.
 https://cdn.modrinth.com/data/npfwqUFV/versions/ILJz18ip/SuperEnchants-3.2.0.1-all.jar
 https://cdn.modrinth.com/data/mIaP5HAP/versions/Lh9TONZE/UltimateShop-4.2.3.jar
 https://cdn.modrinth.com/data/scEbl04C/versions/W61DZzoM/AuctionHouse-1.4.1.jar
+https://cdn.modrinth.com/data/TdefKtjL/versions/iJd1UFnP/ExcellentCrates-6.3.3.jar
