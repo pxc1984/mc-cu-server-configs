@@ -1,15 +1,17 @@
 useTimes:
   special:
-    E: {}
-    D: {}
-    G: {}
-    H: {}
-    F: {}
     A: {}
     B: {}
-    C: {}
-    I: {}
+    C:
+      buyUseTimes: 1
+      lastBuyTime: '2026-01-29 06:12:28'
+    D:
+      buyUseTimes: 11
+      lastBuyTime: '2026-01-31 10:51:52'
   sell:
     A:
-      sellUseTimes: 5
-      lastSellTime: '2026-01-26 21:19:19'
+      sellUseTimes: 9
+      lastSellTime: '2026-01-28 15:47:42'
+    B:
+      sellUseTimes: 3
+      lastSellTime: '2026-01-31 10:50:52'

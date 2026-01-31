@@ -1,0 +1,563 @@
+Name: '&6&lКонтейнер с кастомными кирками'
+Description: []
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{components:{"minecraft:custom_name":''{"bold":false,"extra":[{"bold":false,"italic":false,"obfuscated":false,"strikethrough":false,"text":"Custom Pickaxes 1 Crate","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'',"minecraft:profile":{id:[I;-850160402,1534147744,-2009838519,1945945916],name:"1ff041976a09dd05",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZmMDQxOTc2YTA5ZGQwNTNlM2QxZDRlNjExYWFjMDk1OTRkNzRmYzcxYTBlYzRkYTAxMTA0MTZkMzE3ZGJhOCJ9fX0="}]}},count:1,id:"minecraft:player_head"}'
+    DataVersion: 4189
+ItemStackable: false
+Permission_Required: false
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: simple_roll
+Opening:
+  Cooldown: 0
+Key:
+  Required: true
+  Ids:
+  - custom_pickaxes_1_key
+Block:
+  Positions:
+  - 35,121,-165,world
+  Pushback:
+    Enabled: false
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: helix
+    Particle:
+      Name: CRIT
+Milestones:
+  Repeatable: true
+  List:
+    '0':
+      Reward_Id: experience_bottle_1
+      Openings: 25
+    '1':
+      Reward_Id: iron_pickaxe_1
+      Openings: 35
+    '2':
+      Reward_Id: diamond_block
+      Openings: 45
+    '3':
+      Reward_Id: netherite_block
+      Openings: 55
+    '4':
+      Reward_Id: diamond_pickaxe_1
+      Openings: 75
+    '5':
+      Reward_Id: emerald
+      Openings: 85
+    '6':
+      Reward_Id: diamond_pickaxe
+      Openings: 95
+_dataver: 600
+Rewards:
+  List:
+    бурило:
+      Type: ITEM
+      Weight: 0.005
+      Rarity: mythic
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''"БУРИЛО"'',"minecraft:enchantments":{levels:{"minecraft:efficiency":5,"minecraft:fortune":3,"superenchants:abiding":1,"superenchants:autosmelt":1,"superenchants:enlightened":5,"superenchants:excavator":3,"superenchants:veinminer":1}},"minecraft:repair_cost":3,"minecraft:unbreakable":{}},count:1,id:"minecraft:netherite_pickaxe"}'
+            DataVersion: 4189
+        '1':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"superenchants:teleport":1}}},count:1,id:"minecraft:netherite_sword"}'
+            DataVersion: 4189
+    diamond_pickaxe:
+      Type: ITEM
+      Weight: 0.25
+      Rarity: mythic
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"superenchants:excavator":2}}},count:1,id:"minecraft:diamond_pickaxe"}'
+            DataVersion: 4189
+    diamond_pickaxe_1:
+      Type: ITEM
+      Weight: 0.5
+      Rarity: rare
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"superenchants:excavator":1}}},count:1,id:"minecraft:diamond_pickaxe"}'
+            DataVersion: 4189
+    iron_pickaxe:
+      Type: ITEM
+      Weight: 1.0
+      Rarity: mythic
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"superenchants:excavator":2}}},count:1,id:"minecraft:iron_pickaxe"}'
+            DataVersion: 4189
+    iron_pickaxe_1:
+      Type: ITEM
+      Weight: 2.0
+      Rarity: mythic
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"superenchants:excavator":1}}},count:1,id:"minecraft:iron_pickaxe"}'
+            DataVersion: 4189
+    netherite_block:
+      Type: ITEM
+      Weight: 3.0
+      Rarity: mythic
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:3,id:"minecraft:netherite_block"}'
+            DataVersion: 4189
+    nether_star:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: mythic
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:nether_star"}'
+            DataVersion: 4189
+    diamond_block:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: mythic
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:diamond_block"}'
+            DataVersion: 4189
+    netherite_upgrade_smithing_template:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: mythic
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:netherite_upgrade_smithing_template"}'
+            DataVersion: 4189
+    счастливое_яйцо:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:attribute_modifiers":{modifiers:[{amount:20.0d,id:"minecraft:cd80c8d6-ceee-4b19-9163-b0e18e94675e",operation:"add_value",slot:"offhand",type:"minecraft:luck"},{amount:-19.5d,id:"minecraft:e1f9a52d-cb2a-4be8-9885-dd4b6d2da69c",operation:"add_value",slot:"offhand",type:"minecraft:max_health"}]},"minecraft:custom_name":''{"extra":["",{"bold":true,"color":"gold","text":"Счастливое яйцо"}],"italic":false,"text":""}'',"minecraft:enchantments":{levels:{"minecraft:sharpness":1},show_in_tooltip:0b},"minecraft:lore":[''{"color":"white","extra":["",{"color":"aqua","text":"Это
+              яйцо вообще очень счастливое."}],"italic":false,"text":""}'',''{"color":"white","extra":["",{"color":"dark_gray","text":"(хз как везение помогает в майне)"}],"italic":false,"text":""}'']},count:2,id:"minecraft:egg"}'
+            DataVersion: 4189
+    diamond:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:diamond"}'
+            DataVersion: 4189
+    enchanted_golden_apple:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:enchanted_golden_apple"}'
+            DataVersion: 4189
+    experience_bottle_1:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:experience_bottle"}'
+            DataVersion: 4189
+    emerald:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:emerald"}'
+            DataVersion: 4189
+    book:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:attribute_modifiers":{modifiers:[{amount:0.5d,id:"minecraft:89f540d6-1b02-43de-8bcd-0858d9107c0e",operation:"add_value",slot:"mainhand",type:"minecraft:luck"}]},"minecraft:enchantments":{levels:{"minecraft:protection":1},show_in_tooltip:0b},"minecraft:lore":[''{"color":"white","extra":["","Этот сервер для локальной веселой игры)"],"italic":false,"text":""}'',''{"color":"white","extra":["","Список правил:"],"italic":false,"text":""}'',''{"color":"white","extra":["","1.
+              Кто прочитал тот умрёт"],"italic":false,"text":""}'',''{"color":"white","extra":["","2. Админ всегда прав"],"italic":false,"text":""}'',''{"color":"white","extra":["","3. Не ломайте чужие дома"],"italic":false,"text":""}'',''{"color":"white","extra":["","4. Если тронешь аниме - станешь загадкой для следователя"],"italic":false,"text":""}'',''{"color":"white","extra":["","5. Приваты делаются админом с опкой"],"italic":false,"text":""}'',''{"color":"white","extra":["",{"color":"dark_gray","text":"(6.
+              Если ты лёша - "},{"color":"dark_red","text":"опасайся.)"}],"italic":false,"text":""}''],"minecraft:unbreakable":{}},count:4,id:"minecraft:book"}'
+            DataVersion: 4189
+    cake:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:cake"}'
+            DataVersion: 4189
+    cookie:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:32,id:"minecraft:cookie"}'
+            DataVersion: 4189
+    ender_pearl:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:8,id:"minecraft:ender_pearl"}'
+            DataVersion: 4189
+    experience_bottle:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:experience_bottle"}'
+            DataVersion: 4189

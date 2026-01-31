@@ -1,58 +1,56 @@
 useTimes:
-  special:
-    E: {}
-    D:
-      buyUseTimes: 2
-      lastBuyTime: '2026-01-26 19:03:01'
-    I:
-      buyUseTimes: 3
-      lastBuyTime: '2026-01-26 18:58:50'
-    H: {}
+  minerals:
+    I: {}
+    A: {}
     F: {}
-    A:
-      buyUseTimes: 1
-      lastBuyTime: '2026-01-26 19:24:43'
+    D: {}
+    B: {}
+    H: {}
+    E: {}
+    G: {}
     C: {}
-    G:
-      buyUseTimes: 1
-      lastBuyTime: '2026-01-26 19:11:46'
+    J: {}
+  fish:
+    C: {}
+    F: {}
+    E: {}
+    D: {}
+    A: {}
     B: {}
   terracottas:
-    G: {}
-    F: {}
-    A: {}
-    O: {}
-    J: {}
-    N: {}
-    B: {}
-    C: {}
     H: {}
-    I: {}
-    E: {}
-    K: {}
-    P: {}
     L: {}
+    D: {}
     M: {}
-    D: {}
-  fish:
-    F: {}
-    C: {}
-    A: {}
     E: {}
     B: {}
-    D: {}
-  minerals:
-    E: {}
-    D: {}
-    B: {}
-    A: {}
-    I: {}
+    K: {}
+    N: {}
     J: {}
-    C: {}
-    H: {}
+    O: {}
+    I: {}
+    P: {}
     F: {}
     G: {}
+    A: {}
+    C: {}
   sell:
+    B:
+      sellUseTimes: 4
+      lastSellTime: '2026-01-28 23:18:05'
     A:
       sellUseTimes: 1
       lastSellTime: '2026-01-26 19:07:20'
+  special:
+    C:
+      buyUseTimes: 2
+      lastBuyTime: '2026-01-28 23:23:39'
+    B:
+      buyUseTimes: 5
+      lastBuyTime: '2026-01-28 22:25:28'
+    A:
+      buyUseTimes: 5
+      lastBuyTime: '2026-01-28 22:25:19'
+    D:
+      buyUseTimes: 34
+      lastBuyTime: '2026-01-29 11:02:34'

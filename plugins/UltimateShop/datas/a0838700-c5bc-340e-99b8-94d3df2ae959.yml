@@ -82,16 +82,16 @@ useTimes:
     D: {}
     E: {}
     J: {}
-    H: {}
     B: {}
+    H: {}
     G: {}
   blocks:
     T: {}
     F: {}
     L: {}
     H: {}
-    M: {}
     Q: {}
+    M: {}
     P: {}
     N: {}
     O: {}
@@ -108,16 +108,16 @@ useTimes:
     E: {}
     K: {}
   terracottas:
-    D: {}
-    M: {}
-    E: {}
     B: {}
+    D: {}
+    E: {}
+    M: {}
     J: {}
     H: {}
     P: {}
     F: {}
-    C: {}
     A: {}
+    C: {}
     K: {}
     O: {}
     G: {}
@@ -146,12 +146,10 @@ useTimes:
     B: {}
     T: {}
   sell:
-    A:
-      sellUseTimes: 852
-      lastSellTime: '2026-01-31 16:52:26'
+    A: {}
     B:
-      sellUseTimes: 1119
-      lastSellTime: '2026-01-31 17:53:00'
+      sellUseTimes: 4
+      lastSellTime: '2026-01-30 02:46:09'
   redstone:
     D: {}
     B: {}
@@ -182,14 +180,8 @@ useTimes:
     O: {}
   special:
     C:
-      buyUseTimes: 27
-      lastBuyTime: '2026-01-31 17:29:39'
-    B:
-      buyUseTimes: 10
-      lastBuyTime: '2026-01-30 22:09:10'
-    A:
-      buyUseTimes: 15
-      lastBuyTime: '2026-01-30 18:28:39'
-    D:
-      buyUseTimes: 618
-      lastBuyTime: '2026-01-31 17:52:03'
+      buyUseTimes: 2
+      lastBuyTime: '2026-01-30 02:46:30'
+    B: {}
+    A: {}
+    D: {}

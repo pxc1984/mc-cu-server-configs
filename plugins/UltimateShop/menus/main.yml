@@ -33,11 +33,14 @@ buttons:
         shop: sell
   B:
     display-item:
-      material: DIAMOND_PICKAXE
-      name: '&b&lКастомные зачарования'
+      material: CHEST
+      name: '&b&lКлючики для контейнеров'
       lore:
-        - '&7Покупка кастомных кирок и мечей'
-        - '&7SuperEnchants'
+        - '&7- Кастомные чары'
+        - '&7- Кастомные предметы'
+        - '&7- Аниме девочки (самое ценное)'
+        - ''
+        - '&3Без P2W - только за ресурсы.'
     actions:
       1:
         type: shop_menu

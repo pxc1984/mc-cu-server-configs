@@ -26,3 +26,24 @@ items:
         amount: '50'
         placeholder: '{amount}$'
         start-apply: 0
+
+  B:
+    display-item:
+      material: DIAMOND
+      amount: 16
+      name: '&316 Алмазов'
+      lore:
+        - '&7Продажа: &a50$'
+    price-mode: CLASSIC_ALL
+    product-mode: CLASSIC_ALL
+    products:
+      1:
+        material: DIAMOND
+        amount: 16
+    # Only sell (player sells item to shop)
+    sell-prices:
+      1:
+        economy-plugin: Vault
+        amount: '50'
+        placeholder: '{amount}$'
+        start-apply: 0

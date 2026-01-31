@@ -6,158 +6,95 @@ settings:
   secret-shop-items: true
 
 items:
-  # ===== Кирки: AutoSmelt I =====
   A:
     price-mode: CLASSIC_ALL
     product-mode: CLASSIC_ALL
     products:
       1:
-        material: STONE_PICKAXE
-        amount: 1
-        name: '&fКаменная кирка &7(AutoSmelt I)'
-        enchants:
-          "superenchants:autosmelt": 1
+        material: PAPER
+        amount: 5
+        name: '&6Покупка 5 ключей: &3Аниме девочки'
+        lore:
+          - '&7Работает только из /shop'
+          - '&7Этот чек — просто предмет-памятка'
+        give-item: true
     buy-prices:
       1:
         economy-plugin: Vault
-        amount: '500'
+        amount: '25'
         placeholder: '{amount}$'
         start-apply: 0
+    buy-actions:
+      1:
+        type: console_command
+        command: 'crates key give {player} ключ_с_аниме_девочками 5'
 
   B:
     price-mode: CLASSIC_ALL
     product-mode: CLASSIC_ALL
     products:
       1:
-        material: IRON_PICKAXE
-        amount: 1
-        name: '&fЖелезная кирка &7(AutoSmelt I)'
-        enchants:
-          "superenchants:autosmelt": 1
+        material: PAPER
+        amount: 25
+        name: '&6Покупка 25 ключей: &eАниме девочки'
+        lore:
+          - '&7Работает только из /shop'
+          - '&7Этот чек — просто предмет-памятка'
+        give-item: true
     buy-prices:
       1:
         economy-plugin: Vault
-        amount: '1000'
+        amount: '100'
         placeholder: '{amount}$'
         start-apply: 0
+    buy-actions:
+      1:
+        type: console_command
+        command: 'crates key give {player} ключ_с_аниме_девочками 25'
 
   C:
     price-mode: CLASSIC_ALL
     product-mode: CLASSIC_ALL
     products:
       1:
-        material: DIAMOND_PICKAXE
+        material: DIAMOND
         amount: 1
-        name: '&bАлмазная кирка &7(AutoSmelt I)'
-        enchants:
-          "superenchants:autosmelt": 1
+        name: '&6Покупка 1 ключа: &4Супер Кирки'
+        lore:
+          - '&7Работает только из /shop'
+          - '&7Этот чек — просто предмет-памятка'
+        give-item: true
     buy-prices:
       1:
         economy-plugin: Vault
-        amount: '1500'
+        amount: '75'
         placeholder: '{amount}$'
         start-apply: 0
+    buy-actions:
+      1:
+        type: console_command
+        command: 'crates key give {player} custom_pickaxes_1_key 1'
 
-  # ===== Кирки: Excavator I =====
+
   D:
     price-mode: CLASSIC_ALL
     product-mode: CLASSIC_ALL
     products:
       1:
-        material: STONE_PICKAXE
-        amount: 1
-        name: '&fКаменная кирка &7(Excavator I)'
-        enchants:
-          "superenchants:excavator": 1
+        material: DIAMOND
+        amount: 2
+        name: '&6Покупка 2 ключей: &4Супер Кирки'
+        lore:
+          - '&7Работает только из /shop'
+          - '&7Этот чек — просто предмет-памятка'
+        give-item: true
     buy-prices:
       1:
         economy-plugin: Vault
-        amount: '200'
+        amount: '135'
         placeholder: '{amount}$'
         start-apply: 0
-
-  E:
-    price-mode: CLASSIC_ALL
-    product-mode: CLASSIC_ALL
-    products:
+    buy-actions:
       1:
-        material: IRON_PICKAXE
-        amount: 1
-        name: '&fЖелезная кирка &7(Excavator I)'
-        enchants:
-          "superenchants:excavator": 1
-    buy-prices:
-      1:
-        economy-plugin: Vault
-        amount: '500'
-        placeholder: '{amount}$'
-        start-apply: 0
-
-  F:
-    price-mode: CLASSIC_ALL
-    product-mode: CLASSIC_ALL
-    products:
-      1:
-        material: DIAMOND_PICKAXE
-        amount: 1
-        name: '&bАлмазная кирка &7(Excavator I)'
-        enchants:
-          "superenchants:excavator": 1
-    buy-prices:
-      1:
-        economy-plugin: Vault
-        amount: '1000'
-        placeholder: '{amount}$'
-        start-apply: 0
-
-  # ===== Мечи: Lightning I =====
-  G:
-    price-mode: CLASSIC_ALL
-    product-mode: CLASSIC_ALL
-    products:
-      1:
-        material: STONE_SWORD
-        amount: 1
-        name: '&fКаменный меч &7(Lightning I)'
-        enchants:
-          "superenchants:lightning": 1
-    buy-prices:
-      1:
-        economy-plugin: Vault
-        amount: '200'
-        placeholder: '{amount}$'
-        start-apply: 0
-
-  H:
-    price-mode: CLASSIC_ALL
-    product-mode: CLASSIC_ALL
-    products:
-      1:
-        material: IRON_SWORD
-        amount: 1
-        name: '&fЖелезный меч &7(Lightning I)'
-        enchants:
-          "superenchants:lightning": 1
-    buy-prices:
-      1:
-        economy-plugin: Vault
-        amount: '500'
-        placeholder: '{amount}$'
-        start-apply: 0
-
-  I:
-    price-mode: CLASSIC_ALL
-    product-mode: CLASSIC_ALL
-    products:
-      1:
-        material: DIAMOND_SWORD
-        amount: 1
-        name: '&bАлмазный меч &7(Lightning I)'
-        enchants:
-          "superenchants:lightning": 1
-    buy-prices:
-      1:
-        economy-plugin: Vault
-        amount: '1000'
-        placeholder: '{amount}$'
-        start-apply: 0
+        type: console_command
+        command: 'crates key give {player} custom_pickaxes_1_key 2'

@@ -1,13 +1,9 @@
 useTimes:
   special:
-    E: {}
-    D: {}
-    G: {}
-    H: {}
-    F: {}
     A: {}
     B: {}
     C: {}
-    I: {}
+    D: {}
   sell:
     A: {}
+    B: {}
