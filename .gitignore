@@ -5,6 +5,7 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+items.json
 
 # Archives / dumps
 *.zip

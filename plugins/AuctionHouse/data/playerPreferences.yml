@@ -1,0 +1,55 @@
+players:
+  d89ef793-2ad0-3194-ae01-383bc0eac303:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  7023a3ce-a6ef-38be-bc2f-45e303a0702e:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  df6e8813-b974-3d66-9455-444008abfa99:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  c66af795-ec94-3899-97a3-8ff98c272c94:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  82d46f9e-92b8-31ac-9743-6f282876471a:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  061f6b37-0d69-3020-a243-e83eda5fe04a:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  13a9d1e5-bad6-31b8-a00e-cdc5e265f537:
+    configuration: '{"currentSort":"LOWEST_PRICE"}'
+  c0378422-55ff-3edf-964d-25b4e69e56eb:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  5eaec048-0039-35c1-8d46-2b4841cc6b7c:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  cc7b1756-c86a-3642-868d-00e721a07dab:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  10e2486f-7587-3d81-a10c-27ddb6ec0ee8:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  2b503f0c-989f-3fc3-ba90-d068308516f3:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  f0c18d1f-afe0-3a01-a69b-663bbe7ebffb:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  89876cb4-0f16-3000-baa4-524680f013aa:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  deb67d72-4fc1-313d-9673-44420e9c4b62:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  a0838700-c5bc-340e-99b8-94d3df2ae959:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  e8fdbe96-7329-3072-b5dd-1117aca8d0bb:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  3c430654-914d-3390-94fa-ee93be5d3c4e:
+    configuration: '{"currentSort":"HIGHEST_PRICE","currentPlayer":"3c430654-914d-3390-94fa-ee93be5d3c4e"}'
+  39a73e9f-c08a-3a3d-b986-812b4739807b:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  d2790a89-3d51-393f-9264-d9407f469657:
+    configuration: '{"currentSort":"HIGHEST_PRICE","currentPlayer":"d2790a89-3d51-393f-9264-d9407f469657"}'
+  5b1d4905-6dbb-35fc-8e05-836fab028151:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  f808d6ca-1dfc-309b-b746-794baec414d2:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  c93d127d-d4e5-3987-be8c-d11bb5cadd53:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  f41a3c2c-84b4-3076-be6c-babc56d421c2:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  9675a624-8815-39c0-ba53-9ba85cffef42:
+    configuration: '{"currentSort":"HIGHEST_PRICE"}'
+  87ddb143-a7e8-37fd-b54f-b53f5426b4be:
+    configuration: '{"currentSort":"HIGHEST_PRICE","currentPlayer":"87ddb143-a7e8-37fd-b54f-b53f5426b4be"}'
+  4ef33545-60a5-387e-b68e-85673f68edc6:
+    configuration: '{"currentSort":"HIGHEST_PRICE","currentPlayer":"4ef33545-60a5-387e-b68e-85673f68edc6"}'
