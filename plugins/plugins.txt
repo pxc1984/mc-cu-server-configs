@@ -30,3 +30,4 @@ https://cdn.modrinth.com/data/npfwqUFV/versions/ILJz18ip/SuperEnchants-3.2.0.1-a
 https://cdn.modrinth.com/data/mIaP5HAP/versions/Lh9TONZE/UltimateShop-4.2.3.jar
 https://cdn.modrinth.com/data/scEbl04C/versions/W61DZzoM/AuctionHouse-1.4.1.jar
 https://cdn.modrinth.com/data/TdefKtjL/versions/iJd1UFnP/ExcellentCrates-6.3.3.jar
+https://cdn.modrinth.com/data/swbUV1cr/versions/rUyuQba7/bluemap-5.14-paper.jar
