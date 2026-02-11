@@ -1,5 +1,4 @@
 https://cdn.modrinth.com/data/3IEZ9vol/versions/oezVemzR/AuthMe-5.7.0-FORK-Universal.jar
-https://cdn.modrinth.com/data/8sg1aj4I/versions/CK1V6HTE/BedWars-0.2.42.1.jar
 https://cdn.modrinth.com/data/hXiIvTyT/versions/SKQwLLoQ/EssentialsX-2.21.0.jar
 https://cdn.modrinth.com/data/g8Zwnnmn/versions/wNFGe3C9/ExecutableItems-7.25.12.24.jar
 https://cdn.modrinth.com/data/Vebnzrzj/versions/OrIs0S6b/LuckPerms-Bukkit-5.5.17.jar
@@ -19,8 +18,6 @@ https://cdn.modrinth.com/data/JOwrpZ7P/versions/6flJlSqM/playersit-1.0.0.jar
 https://cdn.modrinth.com/data/2qgyQbO1/versions/mLVD9CNS/EssentialsXChat-2.21.0.jar
 https://cdn.modrinth.com/data/gG7VFbG0/versions/BQc9Xm3K/TAB%20v5.4.0.jar
 
-https://cdn.modrinth.com/data/lJPKRQLl/versions/nyUYcJ8o/SBA-1.5.18-all.jar
-
 https://cdn.modrinth.com/data/LTNsiZoj/versions/iMOhKlHi/TelegramChat_PDev-1.0.jar
 
 https://cdn.modrinth.com/data/ayRaM8J7/versions/zoSnz1nu/VaultUnlocked-2.18.0.jar
@@ -33,4 +30,3 @@ https://cdn.modrinth.com/data/npfwqUFV/versions/ILJz18ip/SuperEnchants-3.2.0.1-a
 https://cdn.modrinth.com/data/mIaP5HAP/versions/Lh9TONZE/UltimateShop-4.2.3.jar
 https://cdn.modrinth.com/data/scEbl04C/versions/W61DZzoM/AuctionHouse-1.4.1.jar
 https://cdn.modrinth.com/data/TdefKtjL/versions/iJd1UFnP/ExcellentCrates-6.3.3.jar
-
